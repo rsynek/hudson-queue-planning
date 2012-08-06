@@ -1,0 +1,102 @@
+package org.jboss.qa.brms.hqp;
+
+dialect "java"
+
+import org.drools.planner.core.score.buildin.hardandsoft.HardAndSoftScoreHolder;
+import org.drools.planner.core.score.constraint.IntConstraintOccurrence;
+import org.drools.planner.core.score.constraint.ConstraintType;
+
+import org.jboss.qa.brms.hqp.domain.Job;
+import org.jboss.qa.brms.hqp.domain.Machine;
+import java.util.Collection;
+
+global HardAndSoftScoreHolder scoreHolder;
+
+
+/************ Hard constraints *****************/
+
+/* 
+ *  machine with multiple jobs should not exist
+ */
+rule "oneJobPerMachine"
+    when
+        $job : Job($assignedNode : assignedNode, assignedNode != new Machine("not-assigned"))
+        $count : Number() from accumulate($jobsWithSameNode : Job(this != $job, assignedNode == $assignedNode),
+               count($jobsWithSameNode)
+        )
+    then
+        insertLogical(new IntConstraintOccurrence("oneJobPerMachine", ConstraintType.NEGATIVE_HARD, 5 * $count.intValue()));
+end
+
+rule "unassignedJob"
+    when
+        $count : Number() from accumulate($jobsWithoutNode : Job(assignedNode == new Machine("not-assigned")),
+               count($jobsWithoutNode)
+        )
+    then
+        insertLogical(new IntConstraintOccurrence("unassignedJob", ConstraintType.NEGATIVE_HARD, $count.intValue()));
+end
+
+/************ Soft constraints *****************/
+
+rule "priority"
+    when
+        Job(assignedNode == new Machine("not-assigned"), $priority : priority)
+    then
+        insertLogical(new IntConstraintOccurrence("priority", ConstraintType.NEGATIVE_SOFT, $priority));
+end
+
+/* 
+ *  if job A has possible nodes, which are subset of possible nodes of job B, 
+ *  job A should take precedence 
+ */
+
+rule "concreteJobFirst"
+    when
+        $jobA : Job($nodesA : nodes, $assigned : assignedNode, assignedNode != new Machine("not-assigned"))
+        Job(this != $jobA, $nodesB : nodes, assignedNode == new Machine("not-assigned"), $nodesB.contains($assigned))
+        eval($nodesB.size() < $nodesA.size())
+    then
+        insertLogical(new IntConstraintOccurrence("concreteJobFirst", ConstraintType.NEGATIVE_SOFT,
+                $nodesA.size() - $nodesB.size()));
+end
+
+/*
+ * if there are jobs waiting twice longer than others, they should be assigned
+ */
+rule "anti-aging"
+    when
+        $job : Job(assignedNode == new Machine("not-assigned"), $time : timeDiff)
+
+        $sum : Number() from accumulate($younger : Job(this != $job, assignedNode != null, timeDiff > 1800000,  $time * 2 > timeDiff),
+                count($younger))
+        eval($sum.intValue() > 0)        
+    then
+        insertLogical(new IntConstraintOccurrence("anti-aging", ConstraintType.NEGATIVE_SOFT,
+              $sum.intValue()));
+end
+
+
+// Accumulate hard constraints
+rule "hardConstraintsBroken"
+        salience -1
+    when
+        $hardTotal : Number() from accumulate(
+            IntConstraintOccurrence(constraintType == ConstraintType.NEGATIVE_HARD, $weight : weight),
+            sum($weight)
+        )
+    then
+        scoreHolder.setHardConstraintsBroken($hardTotal.intValue());
+end
+
+// Accumulate soft constraints
+rule "softConstraintsBroken"
+        salience -1
+    when
+        $softTotal : Number() from accumulate(
+            IntConstraintOccurrence(constraintType == ConstraintType.NEGATIVE_SOFT, $weight : weight),
+            sum($weight)
+        )
+    then
+        scoreHolder.setSoftConstraintsBroken($softTotal.intValue());
+end

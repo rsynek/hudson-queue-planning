@@ -1,0 +1,35 @@
+# Vim tmp files
+*~
+*.swp
+
+# Eclipse project files
+.project
+.classpath
+**/.project
+**/.classpath
+**/.settings
+
+# NetBeans private project files
+/nbproject/private/
+/nbactions-*.xml
+/nb-configuration.xml
+
+build.properties
+
+# output directories
+bin
+classes
+data
+javadoc
+log
+screenshots
+testng-output
+output
+
+# BRE testsuite tmp files
+tmp
+**/*.tlog
+
+# testng output directories and file
+target
+test-output

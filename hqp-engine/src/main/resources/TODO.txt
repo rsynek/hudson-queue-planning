@@ -1,0 +1,31 @@
+move to my github
+-------------------------
+add benchmark to find out tabu size, starting temperature
+
+-> it should reveale the percentage of planning entities, which we can 
+dynamically set during solving
+
+
+------------------------------------
+each machine will have number of free executors
+
+ideas:
+-pool with all nodes has to be contructed at the beginning and with every update
+-planningEntityProperty will be changed to planningSolutionProperty
+-new hard constraint has to be included - to avoid assignment of wrong machine
+-moves has to be fixed; on the other hand, maybe generic moves would be usable... -> pillarSwapMove
+
+
+-the comparison assignment (FIFO) must be improved or deleted...
+-input generation must be updated
+------------------------------------
+questions:
+-can every job be assigned to executor on machine where another job is running? (port collision)
+-parent jobs probably can?
+
+answers:
+-more jobs on the same slave --> only special slaves have several executors 
+    and user must be aware of port collision when he gives this label to his job.
+-ordinary slave has only 1 executor; 0-1 free at every moment.
+
+https://issues.jboss.org/browse/JBQA-6738
