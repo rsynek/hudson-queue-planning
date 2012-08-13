@@ -30,7 +30,7 @@ public class HudsonQueueJsonSerializer extends JsonSerializer<HudsonQueue> {
             jg.writeStartObject();
             jg.writeNumberField("id", j.getId());
             jg.writeStringField("name", j.getName());
-            jg.writeStringField("node", j.getAssignedNode().getName());
+            jg.writeStringField("node", j.getAssigned().getMachine().getName());
             jg.writeEndObject();
         }
         jg.writeEndArray();
