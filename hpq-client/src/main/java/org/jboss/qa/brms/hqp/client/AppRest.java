@@ -23,7 +23,7 @@ public class AppRest {
     }
     
     public void run() {
-        final String file = "/org/jboss/qa/brms/hqp/sample_data_2.json";
+        final String file = "/org/jboss/qa/brms/hqp/sample_data_1.json";
         String json = null;
         try {
             json = FileUtils.readFileToString(new File(AppRest.class.getResource(file).getFile()), "UTF-8");
