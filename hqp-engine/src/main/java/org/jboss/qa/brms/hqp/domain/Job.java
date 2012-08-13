@@ -30,8 +30,8 @@ public class Job {
     private String name;    
     
     private Set<Machine> nodes;
-      
-    private Machine assignedNode;
+    
+    private SlaveExecutor assigned;
 
     @JsonIgnore
     private long timeDiff;
@@ -88,20 +88,26 @@ public class Job {
     }
     
     @PlanningVariable
-    @ValueRange(type = ValueRangeType.FROM_PLANNING_ENTITY_PROPERTY, planningEntityProperty = "nodes")
-    public Machine getAssignedNode() {
-        return this.assignedNode;
+    @ValueRange(type = ValueRangeType.FROM_SOLUTION_PROPERTY, solutionProperty = "slaves")
+    public SlaveExecutor getAssigned() {
+        return this.assigned;
     }
 
-    public void setAssignedNode(Machine assignedNode) {
-        this.assignedNode = assignedNode;
+    public void setAssigned(SlaveExecutor assignedNode) {
+        this.assigned = assignedNode;
     }
     
     public Job clone() {
         Job clone = new Job();
         clone.id = id;
         clone.priority = priority;
-        clone.assignedNode = assignedNode;
+        if(assigned != null) {
+            clone.assigned = assigned.clone();
+        }
+        else { 
+            clone.assigned = null;
+        }
+        
         clone.inQueueSince = inQueueSince;
         clone.timeDiff = timeDiff;
         clone.name = name;
@@ -114,6 +120,10 @@ public class Job {
     }
     
     public boolean solutionEquals(Object o) {
+        return equals(o);
+    }
+    
+    public boolean equals(Object o) {
         if (this == o) {
             return true;
         } else if (o instanceof Job) {
@@ -125,24 +135,26 @@ public class Job {
             return false;
         } 
     }
-    
-    public boolean equals(Object o) {
-        return solutionEquals(o);
-    }
 
     public int hashCode() {
-        return solutionHashCode();
-    }
-    
-    public int solutionHashCode() {
         return new HashCodeBuilder()
                 .append(id)
                 .toHashCode();
     }
     
+    public int solutionHashCode() {
+        HashCodeBuilder hbuilder = new HashCodeBuilder();
+        hbuilder.append(name);
+        for(Machine m : nodes) {
+            hbuilder.append(m);
+        }
+        hbuilder.append(assigned);
+        return hbuilder.toHashCode();
+    }
+    
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("name: ").append(name).append("@").append(id).append(", assigned: ").append(assignedNode).append(", time:")
+        sb.append("name: ").append(name).append("@").append(id).append(", assigned: ").append(assigned).append(", time:")
                 .append(getTimeDiff()).append(", priority: ").append(priority).append("\n");
         sb.append(nodes.toString()).append("\n\n");
         return sb.toString();

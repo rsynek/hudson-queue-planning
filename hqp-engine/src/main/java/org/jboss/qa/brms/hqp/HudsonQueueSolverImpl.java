@@ -8,6 +8,7 @@ import org.drools.planner.core.score.buildin.hardandsoft.HardAndSoftScore;
 import org.jboss.qa.brms.hqp.domain.HudsonQueue;
 import org.jboss.qa.brms.hqp.domain.Job;
 import org.jboss.qa.brms.hqp.domain.Machine;
+import org.jboss.qa.brms.hqp.domain.SlaveExecutor;
 import org.jboss.qa.brms.hqp.solver.BasicFIFOSolver;
 import org.jboss.qa.brms.hqp.solver.JobChange;
 
@@ -35,7 +36,7 @@ public class HudsonQueueSolverImpl implements HudsonQueueSolver {
         queue.initSolution();
 
         solver.setPlanningProblem(queue);
-
+        
         exec = Executors.newSingleThreadExecutor();
         exec.execute(new Runnable() {
 
@@ -54,7 +55,7 @@ public class HudsonQueueSolverImpl implements HudsonQueueSolver {
             if(!solver.isSolving()) {
                 restartSolver();
             }
-            solver.addProblemFactChange(new JobChange(queue.getJobQueue()));
+            solver.addProblemFactChange(new JobChange(queue));
         }
     }
 
@@ -68,8 +69,7 @@ public class HudsonQueueSolverImpl implements HudsonQueueSolver {
         //here is the place to dynamically change the solver configuration
         //...
         
-        solver.setPlanningProblem(last);
-        
+        solver.setPlanningProblem(last);       
         
         exec = Executors.newSingleThreadExecutor();
         exec.execute(new Runnable() {
@@ -81,6 +81,10 @@ public class HudsonQueueSolverImpl implements HudsonQueueSolver {
         });
     }
     
+    /**
+     * Returns actual best solution.
+     * Assigned node is never null, in case particular job has not assigned any node, NOT-ASSIGNED node is provided.
+     */
     @Override
     public HudsonQueue getSolution() {
         if (solver == null || solver.isTerminateEarly()) {
@@ -88,8 +92,8 @@ public class HudsonQueueSolverImpl implements HudsonQueueSolver {
         } else {           
             HudsonQueue solution = (HudsonQueue) solver.getBestSolution().cloneSolution();
             for(Job j : solution.getJobQueue()) {
-                if(j.getAssignedNode() == null) {
-                    j.setAssignedNode(new Machine(Machine.NOT_ASSIGNED));
+                if(j.getAssigned() == null) {
+                    j.setAssigned(new SlaveExecutor(Machine.NOT_ASSIGNED));
                 }
             }
             
@@ -117,6 +121,9 @@ public class HudsonQueueSolverImpl implements HudsonQueueSolver {
     @Override
     public int getRatio() {
         HardAndSoftScore score = (HardAndSoftScore) solver.getBestSolution().getScore();
+        if(score == null) {
+            return 0;
+        }
         int fifo = BasicFIFOSolver.computeUnassigned((HudsonQueue)solver.getBestSolution());
         
         return  fifo + score.getHardScore();

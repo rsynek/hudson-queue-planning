@@ -22,6 +22,12 @@ public class InputGenerator {
     //actual time - maxTimeDiffHours hours
     private int maxTimeDiffHours = 36;
     
+    //how many machines have more than 1 executor
+    private int moreExecutorsMachinePercentage = 5;
+    
+    //and if some machine has, how many?
+    private int maxExecutorCount = 6;
+    
     private int maxPriority = 100;
     
     private Random rnd = new Random(new Random().nextLong());
@@ -72,7 +78,15 @@ public class InputGenerator {
                 third--;
             }
             label += thirdLabels[rnd.nextInt(third)];
-            machines[i] = new Machine(label);
+            
+            int execs;
+            if(rnd.nextInt(100) < moreExecutorsMachinePercentage) {
+                execs = rnd.nextInt(maxExecutorCount-1)+1;
+            } else {
+                execs = 1;
+            }
+            
+            machines[i] = new Machine(label, execs, rnd.nextInt(execs + 1));
         }
     }
     

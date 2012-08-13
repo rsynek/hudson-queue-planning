@@ -19,10 +19,13 @@
     <localSearch>
         <selector>
             <selector>
-                <moveFactoryClass>org.jboss.qa.brms.hqp.solver.AssignmentChangeMoveFactory</moveFactoryClass>
+                <moveFactoryClass>org.drools.planner.core.move.generic.GenericChangeMoveFactory</moveFactoryClass>
             </selector>
             <selector>
-                <moveFactoryClass>org.jboss.qa.brms.hqp.solver.AssignmentSwapMoveFactory</moveFactoryClass>
+                <moveFactoryClass>org.drools.planner.core.move.generic.GenericSwapMoveFactory</moveFactoryClass>
+            </selector>
+            <selector>
+                <moveFactoryClass>org.drools.planner.core.move.generic.GenericSwapPillarMoveFactory</moveFactoryClass>
             </selector>
         </selector>
         <acceptor>
@@ -33,6 +36,5 @@
             <pickEarlyType>FIRST_BEST_SCORE_IMPROVING</pickEarlyType>
             <minimalAcceptedSelection>10</minimalAcceptedSelection>
         </forager>
-    </localSearch>
-  
+    </localSearch> 
 </solver>

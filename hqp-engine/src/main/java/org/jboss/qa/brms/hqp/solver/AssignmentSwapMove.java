@@ -4,13 +4,12 @@
  */
 package org.jboss.qa.brms.hqp.solver;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import org.drools.planner.core.move.Move;
 import org.drools.planner.core.score.director.ScoreDirector;
 import org.jboss.qa.brms.hqp.domain.Job;
-import org.jboss.qa.brms.hqp.domain.Machine;
+import org.jboss.qa.brms.hqp.domain.SlaveExecutor;
 
 /**
  *
@@ -27,9 +26,9 @@ public class AssignmentSwapMove implements Move {
     }
     
     public boolean isMoveDoable(ScoreDirector scoreDirector) {
-        return !jobLeft.equals(jobRight) 
-                && jobLeft.getNodes().contains(jobRight.getAssignedNode()) 
-                && jobRight.getNodes().contains(jobLeft.getAssignedNode());
+        return !jobLeft.equals(jobRight);/* 
+                && jobLeft.getNodes().contains(jobRight.getAssigned()) 
+                && jobRight.getNodes().contains(jobLeft.getAssigned());*/
     }
 
     public Move createUndoMove(ScoreDirector scoreDirector) {
@@ -37,16 +36,16 @@ public class AssignmentSwapMove implements Move {
     }
 
     public void doMove(ScoreDirector scoreDirector) {
-        Machine left = jobLeft.getAssignedNode();
-        Machine right = jobRight.getAssignedNode();
+        SlaveExecutor left = jobLeft.getAssigned();
+        SlaveExecutor right = jobRight.getAssigned();
         
-        scoreDirector.beforeVariableChanged(jobLeft, "assignedNode");
-        jobLeft.setAssignedNode(right);
-        scoreDirector.afterVariableChanged(jobLeft, "assignedNode");
+        scoreDirector.beforeVariableChanged(jobLeft, "assigned");
+        jobLeft.setAssigned(right);
+        scoreDirector.afterVariableChanged(jobLeft, "assigned");
         
-        scoreDirector.beforeVariableChanged(jobRight, "assignedNode");
-        jobRight.setAssignedNode(left);
-        scoreDirector.afterVariableChanged(jobRight, "assignedNode");
+        scoreDirector.beforeVariableChanged(jobRight, "assigned");
+        jobRight.setAssigned(left);
+        scoreDirector.afterVariableChanged(jobRight, "assigned");
     }
 
     public Collection<? extends Object> getPlanningEntities() {
@@ -54,7 +53,7 @@ public class AssignmentSwapMove implements Move {
     }
 
     public Collection<? extends Object> getPlanningValues() {
-        return Arrays.asList(jobLeft.getAssignedNode(), jobRight.getAssignedNode());
+        return Arrays.asList(jobLeft.getAssigned(), jobRight.getAssigned());
     }
 
     @Override

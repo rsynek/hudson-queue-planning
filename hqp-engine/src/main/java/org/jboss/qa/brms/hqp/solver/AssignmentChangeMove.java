@@ -10,6 +10,7 @@ import org.drools.planner.core.move.Move;
 import org.drools.planner.core.score.director.ScoreDirector;
 import org.jboss.qa.brms.hqp.domain.Job;
 import org.jboss.qa.brms.hqp.domain.Machine;
+import org.jboss.qa.brms.hqp.domain.SlaveExecutor;
 
 /**
  * 
@@ -17,26 +18,26 @@ import org.jboss.qa.brms.hqp.domain.Machine;
  */
 public class AssignmentChangeMove implements Move {
 
-    private Machine node;
+    private SlaveExecutor node;
     private Job job;
     
-    public AssignmentChangeMove(Job job, Machine machine) {
+    public AssignmentChangeMove(Job job, SlaveExecutor node) {
         this.job = job;
-        this.node = machine;
+        this.node = node;
     }
     
     public boolean isMoveDoable(ScoreDirector scoreDirector) {
-        return !job.getAssignedNode().equals(node);//this check is done by move factory: && job.getNodes().contains(node);
+        return !job.getAssigned().equals(node);//this check is done by move factory: && job.getNodes().contains(node);
     }
 
     public Move createUndoMove(ScoreDirector scoreDirector) {
-        return new AssignmentChangeMove(job, job.getAssignedNode());
+        return new AssignmentChangeMove(job, job.getAssigned());
     }
 
     public void doMove(ScoreDirector scoreDirector) {
-        scoreDirector.beforeVariableChanged(job, "assignedNode");
-        job.setAssignedNode(node);
-        scoreDirector.afterVariableChanged(job, "assignedNode");
+        scoreDirector.beforeVariableChanged(job, "assigned");
+        job.setAssigned(node);
+        scoreDirector.afterVariableChanged(job, "assigned");
     }
 
     public Collection<? extends Object> getPlanningEntities() {

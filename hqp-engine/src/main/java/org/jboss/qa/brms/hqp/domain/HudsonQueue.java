@@ -20,9 +20,12 @@ import org.drools.planner.core.solution.Solution;
  */
 @JsonIgnoreProperties(ignoreUnknown=true)
 public class HudsonQueue implements Solution<HardAndSoftScore> {
-    
+       
     @JsonIgnore
     private HardAndSoftScore score;
+    
+    @JsonIgnore
+    private Set<SlaveExecutor> slaves;
     
     @JsonProperty("queue")
     @JsonUnwrapped(enabled=true)    
@@ -32,21 +35,45 @@ public class HudsonQueue implements Solution<HardAndSoftScore> {
     
     public HudsonQueue(List<Job> jobs) {
         jobQueue = jobs;
-    }
+    }   
     
     public void initSolution() {
+        Set<Machine> machines = new HashSet<Machine>();
+        slaves = new HashSet<SlaveExecutor>();
         Date now = new Date();
+        Machine notAssignedMachine = new Machine(Machine.NOT_ASSIGNED);
         for(Job job : jobQueue) {
-            job.getNodes().add(new Machine(Machine.NOT_ASSIGNED));
-            job.setAssignedNode(null);
-            job.computeTimeDiff(now);
+            machines.addAll(job.getNodes());
+
+            job.getNodes().add(notAssignedMachine);
+            job.setAssigned(null);
+            job.computeTimeDiff(now);          
         }
+        
+        for(Machine m : machines) {
+            for(int i = 0; i < m.getFreeExecutors(); i++) {
+                slaves.add(new SlaveExecutor(m, i));
+            }
+        }
+
+        slaves.add(new SlaveExecutor(notAssignedMachine));
+    }
+    
+    public Set<SlaveExecutor> getSlaves() {
+        if(this.slaves == null) {
+            this.slaves = getAllExecutors();
+        }
+        return this.slaves;
+    }
+
+    public void setSlaves(Set<SlaveExecutor> slaveList) {
+        this.slaves = slaveList;
     }
     
     @JsonIgnore
     public Collection getProblemFacts() {
         Collection facts = new ArrayList<Object>();
-        //nothing to add; every job has the list of assignable machines.
+        facts.addAll(this.slaves);
         return facts;
     } 
   
@@ -58,6 +85,13 @@ public class HudsonQueue implements Solution<HardAndSoftScore> {
             clonedJobs.add(j.clone());
         }
         clone.jobQueue = clonedJobs;
+        
+        Set<SlaveExecutor> clonedSlaves = new HashSet<SlaveExecutor>();
+        for(SlaveExecutor slave : slaves) {
+            clonedSlaves.add(slave.clone());
+        }
+        clone.slaves = clonedSlaves;
+        
         return clone;
     }
 
@@ -121,10 +155,22 @@ public class HudsonQueue implements Solution<HardAndSoftScore> {
     }
     
     @JsonIgnore
+    private Set<SlaveExecutor> getAllExecutors() {
+        Set<Machine> machines = getAllNodes();
+        Set<SlaveExecutor> slaveExecs = new HashSet<SlaveExecutor>();
+        for(Machine m : machines) {
+            for(int i = 0; i < m.getFreeExecutors(); i++) {
+                slaveExecs.add(new SlaveExecutor(m, i));
+            }
+        }
+        return slaveExecs;
+    }
+    
+    @JsonIgnore
     public List<Job> getUnassigned() {
         List<Job> jobs = new ArrayList<Job>();
         for(Job j : jobQueue) {
-            if(j.getAssignedNode() != null && j.getAssignedNode().getName().equals("not-assigned")) {
+            if(j.getAssigned() != null && j.getAssigned().getMachine().getName().equals("not-assigned")) {
                 jobs.add(j);
             }
         }

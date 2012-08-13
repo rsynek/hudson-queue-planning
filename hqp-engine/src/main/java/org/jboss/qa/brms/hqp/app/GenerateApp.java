@@ -35,7 +35,7 @@ public class GenerateApp extends AbstractApplication {
     private void runGenerated(String filename, int jobs, int machines) {
         InputGenerator generator = new InputGenerator(io);
         
-        generator.setMaxMachinesPerJobPercentage(50);
+        generator.setMaxMachinesPerJobPercentage(30);
         generator.setMaxTimeDiffHours(72);
         
         generator.generateAndSave(filename, jobs, machines);

@@ -1,5 +1,8 @@
 package org.jboss.qa.brms.hqp.domain;
 
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
+
 /**
  *
  * @author rsynek
@@ -10,10 +13,36 @@ public class Machine {
     
     private String name;
     
+    private int executors;
+    
+    private int freeExecutors;
+    
     public Machine() {}
     
     public Machine(String name) {
+        this(name, 0, 0);
+    }
+
+    public Machine(String name, int executors, int freeExecutors) {
         this.name = name;
+        this.executors = executors;
+        this.freeExecutors = freeExecutors;
+    }
+    
+    public int getExecutors() {
+        return executors;
+    }
+
+    public void setExecutors(int executors) {
+        this.executors = executors;
+    }
+
+    public int getFreeExecutors() {
+        return freeExecutors;
+    }
+
+    public void setFreeExecutors(int freeExecutors) {
+        this.freeExecutors = freeExecutors;
     }
 
     public String getName() {
@@ -25,34 +54,34 @@ public class Machine {
     }
     
     public Machine clone() {
-        return new Machine(name);
+        return new Machine(name, executors, freeExecutors);
     }
     
     public String toString() {
-        return name;
+        return name + ":" + freeExecutors;
     }
 
     @Override
     public boolean equals(Object obj) {
-        if (obj == null) {
+        if(this == obj)
+            return true;
+        if(obj instanceof Machine) {
+            Machine m = (Machine) obj;
+            return new EqualsBuilder()
+                    .append(name, m.name)
+                    .isEquals();
+        }
+        else {
             return false;
         }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Machine other = (Machine) obj;
-        if ((this.name == null) ? (other.name != null) : !this.name.equals(other.name)) {
-            return false;
-        }
-        return true;
+        
     }
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 97 * hash + (this.name != null ? this.name.hashCode() : 0);
-        return hash;
+        return new HashCodeBuilder()
+                .append(name)
+                .toHashCode();
     }
-    
-    
+       
 }

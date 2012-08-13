@@ -12,6 +12,7 @@ import org.drools.planner.core.solution.Solution;
 import org.jboss.qa.brms.hqp.domain.HudsonQueue;
 import org.jboss.qa.brms.hqp.domain.Job;
 import org.jboss.qa.brms.hqp.domain.Machine;
+import org.jboss.qa.brms.hqp.domain.SlaveExecutor;
 
 /**
  *
@@ -24,8 +25,8 @@ public class AssignmentChangeMoveFactory extends CachedMoveFactory {
         List<Move> moves = new ArrayList<Move>();
         HudsonQueue queue = (HudsonQueue) solution;
         for(Job j : queue.getJobQueue()) {
-            for(Machine m : j.getNodes()) {
-                moves.add(new AssignmentChangeMove(j, m));
+            for(SlaveExecutor slave : queue.getSlaves()) {
+                moves.add(new AssignmentChangeMove(j, slave));
             }
         }
         return moves;

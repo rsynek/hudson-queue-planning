@@ -1,197 +1,147 @@
-{"queue":[
-        {
-                "id":165774,
-                "name":"gatein_portal_trunk_cobertura",
-                "priority":30,
-                "inQueueSince":1343628039011,
-                "nodes":[
-                        "dev90-rhel4-x86_64",
-                        "vmg22-rhel4-x86_64",
-                        "vmg21-rhel4-x86_64",
-                        "soa2-rhel4-x86_64",
-                        "dev17-rhel4-x86_64"                ]
-        },
-        {
-                "id":165949,
-                "name":"jbosstools-3.3_trunk.continuous",
-                "priority":50,
-                "inQueueSince":1343641558205,
-                "nodes":[
-                        "dev89-rhel6-x86",
-                        "dev112-rhel6-x86_64",
-                        "dev115-rhel5-x86",
-                        "dev57-rhel6-x86_64",
-                        "dev06-rhel5-x86_64",
-                        "soa4-rhel5-x86_64",
-                        "dev83-rhel6-x86_64",
-                        "vmg18-rhel5-x86_64",
-                        "dev117-rhel5-x86_64",
-                        "dsp01-rhel5_x86_64",
-                        "dev59-rhel6-x86",
-                        "dev01-rhel5-x86",
-                        "vmg20-rhel5-x86",
-                        "vmg17-rhel5-x86_64",
-                        "dev58-rhel6-x86_64",
-                        "vmg19-rhel5-x86",
-                        "dev80-rhel6-x86_64",
-                        "dev116-rhel5-x86_64",
-                        "dev86-rhel6-x86",
-                        "dev85-rhel6-x86_64",
-                        "dev109-rhel6-x86_64",
-                        "soa3-RHEL5-x86",
-                        "dev107-rhel6-x86",
-                        "dev07-rhel5-x86",
-                        "dev08-rhel5-x86_64",
-                        "dev84-rhel6-x86_64",
-                        "dev02-rhel5-x86",
-                        "dev88-rhel6-x86",
-                        "dev114-rhel5-x86",
-                        "dev106-rhel6-x86",
-                        "soa6-rhel5-x86_64",
-                        "dev113-rhel6-x86_64",
-                        "dev111-rhel6-x86_64"                ]
-        },
-        {
-                "id":165910,
-                "name":"eap6,spring-3,sol11_x86_64 && mem4G,true,java16_default",
-                "priority":70,
-                "inQueueSince":1343638565466,
-                "nodes":[
-                        "dev21-02-solaris11-x86",
-                        "dev21-01-solaris11-x86"                ]
-        },
-        {
-                "id":165896,
-                "name":"eap6,spring-3,sol10_sparc64,true,java17_default",
-                "priority":70,
-                "inQueueSince":1343638565446,
-                "nodes":[
-                        "dsp05-solaris10-sparc",
-                        "dtf8-solaris10_sparc",
-                        "dev92-solaris10-sparc",
-                        "dsp04-solaris10-sparc"                ]
-        },
-        {
-                "id":163401,
-                "name":"java16_default,Win2k3_x86_res",
-                "priority":150,
-                "inQueueSince":1343316,
-                "nodes":[
-                        "soa7-win"                ]
-        },
-        {
-                "id":160675,
-                "name":"java16_default,Win2k3_x86_res",
-                "priority":50,
-                "inQueueSince":1343158163251,
-                "nodes":[
-                        "soa5-win"                ]
-        },
-        {
-                "id":136750,
-                "name":"mod_cluster-macosx",
-                "priority":50,
-                "inQueueSince":1341018088190,
-                "nodes":[
-                        "macosx"                ]
-        },
-        {
-                "id":124961,
-                "name":"mod_cluster-aix5",
-                "priority":50,
-                "inQueueSince":1340154139359,
-                "nodes":[
-                        "dev93-aix_5"                ]
-        },
-        {
-                "id":164695,
-                "name":"mod_cluster-solaris10-x86",
-                "priority":50,
-                "inQueueSince":1343439606498,
-                "nodes":[
-                        "dev13-solaris10-x86"                ]
-        },
-        {
-                "id":164694,
-                "name":"mod_cluster-solaris10-sparc",
-                "priority":50,
-                "inQueueSince":1343439600901,
-                "nodes":[
-                        "dev92-solaris10-sparc"                ]
-        },
-        {
-                "id":162356,
-                "name":"hibernate-search-master-windows-jdk7",
-                "priority":50,
-                "inQueueSince":1343275782674,
-                "nodes":[
-                        "soa5-win"                ]
-        },
-        {
-                "id":162355,
-                "name":"hibernate-search-master-windows",
-                "priority":50,
-                "inQueueSince":1343275782674,
-                "nodes":[
-                        "soa5-win"                ]
-        },
-        {
-                "id":167211,
-                "name":"JBoss-EAP-6.0.x-MEAD",
-                "priority":70,
-                "inQueueSince":1343742012798,
-                "nodes":[
-                        "dev89-rhel6-x86",
-                        "dev80-rhel6-x86_64",
-                        "dev86-rhel6-x86",
-                        "dev85-rhel6-x86_64",
-                        "dev57-rhel6-x86_64",
-                        "dev83-rhel6-x86_64",
-                        "dev84-rhel6-x86_64",
-                        "dev59-rhel6-x86",
-                        "dev88-rhel6-x86",
-                        "dev58-rhel6-x86_64",
-                        "dev87-rhel6-x86",
-                        "dev61-rhel6-x86_64",
-                        "dev55-rhel6-x86",
-                        "dev82-rhel6-x86_64",
-                        "dev56-rhel6-x86"                ]
-        },
-        {
-                "id":167174,
-                "name":"openjdk-local,RHEL6_x86",
-                "priority":50,
-                "inQueueSince":1343739838017,
-                "nodes":[
-                        "dev59-rhel6-x86",
-                        "dev89-rhel6-x86",
-                        "dev88-rhel6-x86",
-                        "dev86-rhel6-x86",
-                        "dev87-rhel6-x86",
-                        "dev55-rhel6-x86",
-                        "dev56-rhel6-x86"                ]
-        },
-        {
-                "id":167171,
-                "name":"java16_default,RHEL6_x86",
-                "priority":50,
-                "inQueueSince":1343739808425,
-                "nodes":[
-                        "dev59-rhel6-x86",
-                        "dev89-rhel6-x86",
-                        "dev88-rhel6-x86",
-                        "dev86-rhel6-x86",
-                        "dev87-rhel6-x86",
-                        "dev55-rhel6-x86",
-                        "dev56-rhel6-x86"                ]
-        },
-        {
-                "id":153546,
-                "name":"eap-5-topic-trans-kill",
-                "priority":700,
-                "inQueueSince":1342606003338,
-                "nodes":[
-                    "soa5-win"
-                ]
-        }
-]}
+{
+  "queue" : [ {
+    "id" : 1,
+    "priority" : 17,
+    "inQueueSince" : 1344100609721,
+    "name" : "job@1",
+    "nodes" : [ {
+      "name" : "dsp39-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp93-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 2,
+    "priority" : 84,
+    "inQueueSince" : 1344101789526,
+    "name" : "job@2",
+    "nodes" : [ {
+      "name" : "soa40-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 3,
+    "priority" : 51,
+    "inQueueSince" : 1344196509785,
+    "name" : "job@3",
+    "nodes" : [ {
+      "name" : "dsp74-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa13-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg95-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 4,
+    "priority" : 3,
+    "inQueueSince" : 1344213845115,
+    "name" : "job@4",
+    "nodes" : [ {
+      "name" : "soa40-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa39-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev04-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 5,
+    "priority" : 91,
+    "inQueueSince" : 1344015646625,
+    "name" : "job@5",
+    "nodes" : [ {
+      "name" : "dsp39-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg25-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev17-Win2k8-x86",
+      "executors" : 0,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev59-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 6,
+    "priority" : 44,
+    "inQueueSince" : 1344082647524,
+    "name" : "job@6",
+    "nodes" : [ {
+      "name" : "dev88-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa39-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev04-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp93-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev93-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 7,
+    "priority" : 83,
+    "inQueueSince" : 1344127492394,
+    "name" : "job@7",
+    "nodes" : [ {
+      "name" : "soa40-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 8,
+    "priority" : 50,
+    "inQueueSince" : 1344019894828,
+    "name" : "job@8",
+    "nodes" : [ {
+      "name" : "dev17-Win2k8-x86",
+      "executors" : 0,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev59-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev93-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  } ]
+}

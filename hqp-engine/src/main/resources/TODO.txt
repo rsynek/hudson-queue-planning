@@ -10,14 +10,24 @@ dynamically set during solving
 each machine will have number of free executors
 
 ideas:
--pool with all nodes has to be contructed at the beginning and with every update
--planningEntityProperty will be changed to planningSolutionProperty
--new hard constraint has to be included - to avoid assignment of wrong machine
--moves has to be fixed; on the other hand, maybe generic moves would be usable... -> pillarSwapMove
 
+-pool with all nodes has to be constructed at the beginning --finished
 
--the comparison assignment (FIFO) must be improved or deleted...
--input generation must be updated
+-merging the jobs and machine and executors --finished
+
+-planningEntityProperty will be changed to planningSolutionProperty --finished
+
+-new hard constraint has to be included - to avoid assignment of wrong machine --finished
+
+-moves has to be fixed; on the other hand, maybe generic moves would be usable... -> pillarSwapMove --finished
+
+-the comparison assignment (FIFO) must be improved or deleted...--finished
+
+-input generation must be updated --finished
+
+-fix json input & output --finished
+
+-set config back to previous values --finished
 ------------------------------------
 questions:
 -can every job be assigned to executor on machine where another job is running? (port collision)
