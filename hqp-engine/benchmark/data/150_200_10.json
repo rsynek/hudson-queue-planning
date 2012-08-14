@@ -1,0 +1,6193 @@
+{
+  "queue" : [ {
+    "id" : 1,
+    "priority" : 7,
+    "inQueueSince" : 1344748157864,
+    "name" : "job@1",
+    "nodes" : [ {
+      "name" : "vmg30-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg83-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp54-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa06-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 2,
+    "priority" : 5,
+    "inQueueSince" : 1344681526089,
+    "name" : "job@2",
+    "nodes" : [ {
+      "name" : "dsp89-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa37-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa11-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg35-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa14-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp13-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg96-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa81-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev18-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp17-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp47-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 3,
+    "priority" : 89,
+    "inQueueSince" : 1344714718307,
+    "name" : "job@3",
+    "nodes" : [ {
+      "name" : "vmg35-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg74-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa06-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp66-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 4,
+    "priority" : 47,
+    "inQueueSince" : 1344761895623,
+    "name" : "job@4",
+    "nodes" : [ {
+      "name" : "soa81-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 5,
+    "priority" : 6,
+    "inQueueSince" : 1344661665853,
+    "name" : "job@5",
+    "nodes" : [ {
+      "name" : "dsp73-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 6,
+    "priority" : 98,
+    "inQueueSince" : 1344864042116,
+    "name" : "job@6",
+    "nodes" : [ {
+      "name" : "dev96-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev63-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp21-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa15-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev21-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev78-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev78-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev16-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp10-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa22-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp07-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa02-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg80-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa11-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg45-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev67-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa50-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 7,
+    "priority" : 60,
+    "inQueueSince" : 1344844885223,
+    "name" : "job@7",
+    "nodes" : [ {
+      "name" : "dsp77-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev08-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev71-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 8,
+    "priority" : 45,
+    "inQueueSince" : 1344668196126,
+    "name" : "job@8",
+    "nodes" : [ {
+      "name" : "soa07-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa24-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg11-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp03-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa42-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp99-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa49-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev67-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg65-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp89-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa45-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa26-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg83-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa01-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp77-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg35-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev58-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 9,
+    "priority" : 49,
+    "inQueueSince" : 1344747697634,
+    "name" : "job@9",
+    "nodes" : [ {
+      "name" : "dev47-solaris10-x86",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "vmg63-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg64-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp61-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg69-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg96-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev18-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 10,
+    "priority" : 90,
+    "inQueueSince" : 1344705529362,
+    "name" : "job@10",
+    "nodes" : [ {
+      "name" : "dsp63-solaris10-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg80-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa45-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev18-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 11,
+    "priority" : 27,
+    "inQueueSince" : 1344789358496,
+    "name" : "job@11",
+    "nodes" : [ {
+      "name" : "dsp82-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp67-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev18-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 12,
+    "priority" : 68,
+    "inQueueSince" : 1344642561521,
+    "name" : "job@12",
+    "nodes" : [ {
+      "name" : "dev63-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev16-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev69-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp89-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp76-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa66-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev94-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp99-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 13,
+    "priority" : 56,
+    "inQueueSince" : 1344809326263,
+    "name" : "job@13",
+    "nodes" : [ {
+      "name" : "dev03-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp44-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg25-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp85-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa17-rhel6-x86",
+      "executors" : 4,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa23-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg02-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa17-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev51-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg32-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg63-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg80-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp00-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 14,
+    "priority" : 22,
+    "inQueueSince" : 1344840213898,
+    "name" : "job@14",
+    "nodes" : [ {
+      "name" : "dsp00-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa45-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg65-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev64-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev06-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa42-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa69-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg53-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 15,
+    "priority" : 44,
+    "inQueueSince" : 1344865733415,
+    "name" : "job@15",
+    "nodes" : [ {
+      "name" : "vmg30-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa42-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev64-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg27-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp58-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp13-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg96-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev08-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp88-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev52-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 16,
+    "priority" : 65,
+    "inQueueSince" : 1344707534905,
+    "name" : "job@16",
+    "nodes" : [ {
+      "name" : "dsp76-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev73-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa81-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 17,
+    "priority" : 3,
+    "inQueueSince" : 1344712546759,
+    "name" : "job@17",
+    "nodes" : [ {
+      "name" : "dev08-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 18,
+    "priority" : 65,
+    "inQueueSince" : 1344657808316,
+    "name" : "job@18",
+    "nodes" : [ {
+      "name" : "dsp10-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa42-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa49-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg30-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa84-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg82-solaris10-x86_64",
+      "executors" : 5,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa26-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg38-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp38-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg88-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg47-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 19,
+    "priority" : 5,
+    "inQueueSince" : 1344814130925,
+    "name" : "job@19",
+    "nodes" : [ {
+      "name" : "dsp01-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 20,
+    "priority" : 37,
+    "inQueueSince" : 1344668133533,
+    "name" : "job@20",
+    "nodes" : [ {
+      "name" : "soa38-Win2k8-x86_64",
+      "executors" : 3,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev63-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg30-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa11-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev81-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg69-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa42-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 21,
+    "priority" : 61,
+    "inQueueSince" : 1344822730504,
+    "name" : "job@21",
+    "nodes" : [ {
+      "name" : "soa24-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp67-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp76-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 22,
+    "priority" : 68,
+    "inQueueSince" : 1344687003673,
+    "name" : "job@22",
+    "nodes" : [ {
+      "name" : "dsp01-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa42-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 23,
+    "priority" : 53,
+    "inQueueSince" : 1344768749804,
+    "name" : "job@23",
+    "nodes" : [ {
+      "name" : "vmg83-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa83-Win2k8-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "soa37-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 24,
+    "priority" : 70,
+    "inQueueSince" : 1344708164270,
+    "name" : "job@24",
+    "nodes" : [ {
+      "name" : "vmg69-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg43-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp38-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 25,
+    "priority" : 78,
+    "inQueueSince" : 1344695158387,
+    "name" : "job@25",
+    "nodes" : [ {
+      "name" : "dsp00-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp99-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg80-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev06-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp38-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 26,
+    "priority" : 28,
+    "inQueueSince" : 1344631566200,
+    "name" : "job@26",
+    "nodes" : [ {
+      "name" : "dsp03-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg27-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp61-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa98-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa26-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev25-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa65-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 27,
+    "priority" : 25,
+    "inQueueSince" : 1344766236081,
+    "name" : "job@27",
+    "nodes" : [ {
+      "name" : "vmg02-rhel5-x86",
+      "executors" : 3,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev73-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev75-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev78-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp11-rhel5-x86",
+      "executors" : 4,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg63-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg64-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev16-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp67-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa14-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev47-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa83-Win2k8-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "dev07-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp76-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp38-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg53-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa37-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev58-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 28,
+    "priority" : 89,
+    "inQueueSince" : 1344769593675,
+    "name" : "job@28",
+    "nodes" : [ {
+      "name" : "soa52-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev81-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 29,
+    "priority" : 55,
+    "inQueueSince" : 1344728435960,
+    "name" : "job@29",
+    "nodes" : [ {
+      "name" : "dsp89-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp21-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa72-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev96-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg87-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg28-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev78-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp11-rhel5-x86",
+      "executors" : 4,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg93-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg71-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg70-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg58-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev64-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp07-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp77-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp11-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa38-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 30,
+    "priority" : 94,
+    "inQueueSince" : 1344790271531,
+    "name" : "job@30",
+    "nodes" : [ {
+      "name" : "vmg71-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg64-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg72-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp01-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg69-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp77-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa66-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 31,
+    "priority" : 51,
+    "inQueueSince" : 1344669847822,
+    "name" : "job@31",
+    "nodes" : [ {
+      "name" : "dev67-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 32,
+    "priority" : 62,
+    "inQueueSince" : 1344661864356,
+    "name" : "job@32",
+    "nodes" : [ {
+      "name" : "dev63-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg72-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa96-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg27-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa81-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg92-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev03-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev44-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa15-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 33,
+    "priority" : 64,
+    "inQueueSince" : 1344791031410,
+    "name" : "job@33",
+    "nodes" : [ {
+      "name" : "vmg66-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa07-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg27-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp28-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev44-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev52-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev71-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa81-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp26-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa11-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev51-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa84-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg48-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp80-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 34,
+    "priority" : 21,
+    "inQueueSince" : 1344705341356,
+    "name" : "job@34",
+    "nodes" : [ {
+      "name" : "dev47-solaris10-x86",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "vmg70-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp99-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev05-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg25-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp44-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa14-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa01-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa91-rhel6-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp11-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp67-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 35,
+    "priority" : 89,
+    "inQueueSince" : 1344636607862,
+    "name" : "job@35",
+    "nodes" : [ {
+      "name" : "soa86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp28-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg75-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 36,
+    "priority" : 12,
+    "inQueueSince" : 1344633898177,
+    "name" : "job@36",
+    "nodes" : [ {
+      "name" : "dev96-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg37-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp63-solaris10-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg65-Win2k8-x86",
+      "executors" : 5,
+      "freeExecutors" : 5
+    }, {
+      "name" : "vmg69-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa59-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa11-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp80-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp11-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa65-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 37,
+    "priority" : 72,
+    "inQueueSince" : 1344617767702,
+    "name" : "job@37",
+    "nodes" : [ {
+      "name" : "dev96-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg30-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg70-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg62-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev56-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev49-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp77-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa38-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 38,
+    "priority" : 2,
+    "inQueueSince" : 1344642135754,
+    "name" : "job@38",
+    "nodes" : [ {
+      "name" : "dsp07-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp17-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 39,
+    "priority" : 19,
+    "inQueueSince" : 1344630877986,
+    "name" : "job@39",
+    "nodes" : [ {
+      "name" : "vmg34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev95-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg96-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev94-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg96-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa42-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg63-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev58-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa26-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev18-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 40,
+    "priority" : 16,
+    "inQueueSince" : 1344805971322,
+    "name" : "job@40",
+    "nodes" : [ {
+      "name" : "vmg64-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev08-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev78-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp00-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 41,
+    "priority" : 78,
+    "inQueueSince" : 1344690009600,
+    "name" : "job@41",
+    "nodes" : [ {
+      "name" : "soa38-Win2k8-x86_64",
+      "executors" : 3,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg64-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg64-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev47-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa98-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg80-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg02-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 42,
+    "priority" : 23,
+    "inQueueSince" : 1344623180814,
+    "name" : "job@42",
+    "nodes" : [ {
+      "name" : "soa24-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev78-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp99-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg43-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 43,
+    "priority" : 14,
+    "inQueueSince" : 1344681001044,
+    "name" : "job@43",
+    "nodes" : [ {
+      "name" : "soa24-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev47-solaris10-x86",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "dev69-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp67-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp13-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa42-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa06-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg53-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg45-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa23-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev18-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 44,
+    "priority" : 5,
+    "inQueueSince" : 1344809729584,
+    "name" : "job@44",
+    "nodes" : [ {
+      "name" : "dsp66-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev12-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev67-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev56-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev44-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg87-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev71-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa26-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa23-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa65-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa37-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg11-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg71-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg32-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp61-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp67-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 45,
+    "priority" : 73,
+    "inQueueSince" : 1344791895427,
+    "name" : "job@45",
+    "nodes" : [ {
+      "name" : "dsp86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev63-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev49-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev03-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp39-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 46,
+    "priority" : 5,
+    "inQueueSince" : 1344702280907,
+    "name" : "job@46",
+    "nodes" : [ {
+      "name" : "vmg65-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev44-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa50-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 47,
+    "priority" : 37,
+    "inQueueSince" : 1344626567235,
+    "name" : "job@47",
+    "nodes" : [ {
+      "name" : "soa24-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa23-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp88-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa81-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp11-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa23-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa33-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp11-rhel5-x86",
+      "executors" : 4,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 48,
+    "priority" : 55,
+    "inQueueSince" : 1344677301848,
+    "name" : "job@48",
+    "nodes" : [ {
+      "name" : "soa07-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp03-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev73-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg62-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg96-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev75-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev08-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa15-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa59-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa23-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev25-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev47-solaris10-x86",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "dev63-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg64-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa22-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp61-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg35-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg45-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 49,
+    "priority" : 96,
+    "inQueueSince" : 1344774663758,
+    "name" : "job@49",
+    "nodes" : [ {
+      "name" : "soa06-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 50,
+    "priority" : 15,
+    "inQueueSince" : 1344795683986,
+    "name" : "job@50",
+    "nodes" : [ {
+      "name" : "dev03-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa49-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp58-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp11-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa15-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa59-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev21-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp17-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa96-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp07-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp44-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg32-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp80-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 51,
+    "priority" : 85,
+    "inQueueSince" : 1344621616337,
+    "name" : "job@51",
+    "nodes" : [ {
+      "name" : "soa49-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa83-Win2k8-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "soa02-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa06-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev18-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 52,
+    "priority" : 45,
+    "inQueueSince" : 1344721024170,
+    "name" : "job@52",
+    "nodes" : [ {
+      "name" : "vmg86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg71-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp21-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg30-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa13-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp89-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp07-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg92-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev73-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg80-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp00-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 53,
+    "priority" : 96,
+    "inQueueSince" : 1344689482243,
+    "name" : "job@53",
+    "nodes" : [ {
+      "name" : "soa26-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg92-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp11-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa98-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa59-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa06-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev71-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa17-rhel6-x86",
+      "executors" : 4,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp77-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa42-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp47-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 54,
+    "priority" : 16,
+    "inQueueSince" : 1344826717412,
+    "name" : "job@54",
+    "nodes" : [ {
+      "name" : "soa52-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp44-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp29-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa37-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev78-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg51-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg30-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa23-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg80-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp82-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa81-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp83-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev67-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 55,
+    "priority" : 38,
+    "inQueueSince" : 1344635897944,
+    "name" : "job@55",
+    "nodes" : [ {
+      "name" : "vmg66-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev12-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg11-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg37-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp30-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg27-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev49-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa15-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp41-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg02-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp98-solaris10-sparc",
+      "executors" : 3,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg58-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp54-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev03-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp80-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp00-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa50-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 56,
+    "priority" : 28,
+    "inQueueSince" : 1344698593813,
+    "name" : "job@56",
+    "nodes" : [ {
+      "name" : "soa52-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg02-rhel5-x86",
+      "executors" : 3,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp54-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa13-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg38-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp29-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev96-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp63-solaris10-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp51-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev06-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa69-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev58-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 57,
+    "priority" : 51,
+    "inQueueSince" : 1344712625712,
+    "name" : "job@57",
+    "nodes" : [ {
+      "name" : "vmg45-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 58,
+    "priority" : 56,
+    "inQueueSince" : 1344714854795,
+    "name" : "job@58",
+    "nodes" : [ {
+      "name" : "soa07-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev69-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa49-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp89-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg82-solaris10-x86_64",
+      "executors" : 5,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp07-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg45-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev78-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa06-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp66-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 59,
+    "priority" : 65,
+    "inQueueSince" : 1344752528388,
+    "name" : "job@59",
+    "nodes" : [ {
+      "name" : "dev16-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa22-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa96-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev40-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev47-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev80-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev03-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa91-rhel6-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa81-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 60,
+    "priority" : 67,
+    "inQueueSince" : 1344826566873,
+    "name" : "job@60",
+    "nodes" : [ {
+      "name" : "soa86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa42-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg25-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg65-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg43-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev80-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp17-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa37-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg64-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev51-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg70-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg32-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa96-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg80-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa01-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa69-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev67-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 61,
+    "priority" : 54,
+    "inQueueSince" : 1344640351751,
+    "name" : "job@61",
+    "nodes" : [ {
+      "name" : "dev63-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev75-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 62,
+    "priority" : 89,
+    "inQueueSince" : 1344745360019,
+    "name" : "job@62",
+    "nodes" : [ {
+      "name" : "dsp99-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev73-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg43-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp11-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg28-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp88-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev21-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa06-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg47-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg83-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa52-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg58-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa96-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp01-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev64-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev50-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg80-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev58-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa38-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 63,
+    "priority" : 2,
+    "inQueueSince" : 1344674616017,
+    "name" : "job@63",
+    "nodes" : [ {
+      "name" : "dev05-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp28-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg96-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp85-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev03-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg53-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev71-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev78-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 64,
+    "priority" : 36,
+    "inQueueSince" : 1344687509684,
+    "name" : "job@64",
+    "nodes" : [ {
+      "name" : "vmg64-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg62-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa83-Win2k8-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "dev08-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 65,
+    "priority" : 19,
+    "inQueueSince" : 1344632621523,
+    "name" : "job@65",
+    "nodes" : [ {
+      "name" : "dev69-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa13-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev40-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev75-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg43-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg53-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev21-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev25-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg30-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg83-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp98-solaris10-sparc",
+      "executors" : 3,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg69-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev94-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa69-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp99-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg88-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp11-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 66,
+    "priority" : 34,
+    "inQueueSince" : 1344847052265,
+    "name" : "job@66",
+    "nodes" : [ {
+      "name" : "dev47-solaris10-x86",
+      "executors" : 2,
+      "freeExecutors" : 2
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 67,
+    "priority" : 68,
+    "inQueueSince" : 1344821412664,
+    "name" : "job@67",
+    "nodes" : [ {
+      "name" : "soa42-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev40-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa06-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev71-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp17-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa33-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa45-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa52-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev64-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp77-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp99-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp11-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 68,
+    "priority" : 26,
+    "inQueueSince" : 1344841752806,
+    "name" : "job@68",
+    "nodes" : [ {
+      "name" : "vmg29-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev03-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev95-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg47-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg11-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa22-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg32-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg65-Win2k8-x86",
+      "executors" : 5,
+      "freeExecutors" : 5
+    }, {
+      "name" : "soa96-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg72-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev50-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg80-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa83-Win2k8-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "dev07-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg35-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp99-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg45-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 69,
+    "priority" : 37,
+    "inQueueSince" : 1344747623101,
+    "name" : "job@69",
+    "nodes" : [ {
+      "name" : "soa69-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa50-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 70,
+    "priority" : 60,
+    "inQueueSince" : 1344723294953,
+    "name" : "job@70",
+    "nodes" : [ {
+      "name" : "dev63-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp99-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg25-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp28-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg43-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa59-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa23-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev25-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp66-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg63-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg30-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp44-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa66-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa42-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg35-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa69-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp67-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 71,
+    "priority" : 14,
+    "inQueueSince" : 1344768856423,
+    "name" : "job@71",
+    "nodes" : [ {
+      "name" : "vmg27-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg62-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp44-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa49-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg96-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa98-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev96-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev71-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa65-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev47-solaris10-x86",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "soa17-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp77-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp83-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 72,
+    "priority" : 88,
+    "inQueueSince" : 1344633168759,
+    "name" : "job@72",
+    "nodes" : [ {
+      "name" : "soa07-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg02-rhel5-x86",
+      "executors" : 3,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg96-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev80-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa98-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa81-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa06-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev25-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev20-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev63-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg11-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp67-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg72-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp13-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa83-Win2k8-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "soa37-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg58-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 73,
+    "priority" : 43,
+    "inQueueSince" : 1344691873032,
+    "name" : "job@73",
+    "nodes" : [ {
+      "name" : "dsp66-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg58-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp11-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev18-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 74,
+    "priority" : 55,
+    "inQueueSince" : 1344663869760,
+    "name" : "job@74",
+    "nodes" : [ {
+      "name" : "vmg92-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 75,
+    "priority" : 7,
+    "inQueueSince" : 1344865110869,
+    "name" : "job@75",
+    "nodes" : [ {
+      "name" : "dsp72-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 76,
+    "priority" : 54,
+    "inQueueSince" : 1344651046744,
+    "name" : "job@76",
+    "nodes" : [ {
+      "name" : "vmg41-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp03-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg27-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp44-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp07-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg96-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp77-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa59-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp88-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa45-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 77,
+    "priority" : 63,
+    "inQueueSince" : 1344832987585,
+    "name" : "job@77",
+    "nodes" : [ {
+      "name" : "dev51-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg30-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev64-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa69-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp39-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev58-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 78,
+    "priority" : 44,
+    "inQueueSince" : 1344616307327,
+    "name" : "job@78",
+    "nodes" : [ {
+      "name" : "dsp44-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev95-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg38-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa72-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp41-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg28-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev18-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa26-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp00-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa38-Win2k8-x86_64",
+      "executors" : 3,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg64-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev50-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev94-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 79,
+    "priority" : 54,
+    "inQueueSince" : 1344863286971,
+    "name" : "job@79",
+    "nodes" : [ {
+      "name" : "soa24-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev69-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev56-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev40-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg43-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa33-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg70-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev05-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp54-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev50-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp44-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa83-Win2k8-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "dev63-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg88-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 80,
+    "priority" : 30,
+    "inQueueSince" : 1344855790455,
+    "name" : "job@80",
+    "nodes" : [ {
+      "name" : "vmg66-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp66-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg27-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg62-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa49-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev40-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg38-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev44-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev71-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp13-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa81-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg96-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev58-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 81,
+    "priority" : 31,
+    "inQueueSince" : 1344790045546,
+    "name" : "job@81",
+    "nodes" : [ {
+      "name" : "dsp89-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp30-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp54-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa13-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg25-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev75-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa72-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg87-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev21-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg58-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa96-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg27-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg80-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp44-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp51-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg58-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 82,
+    "priority" : 50,
+    "inQueueSince" : 1344655686622,
+    "name" : "job@82",
+    "nodes" : [ {
+      "name" : "vmg37-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev03-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa49-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa13-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev75-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa81-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa45-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev21-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa38-Win2k8-x86_64",
+      "executors" : 3,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp10-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg72-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa42-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp38-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 83,
+    "priority" : 30,
+    "inQueueSince" : 1344865606860,
+    "name" : "job@83",
+    "nodes" : [ {
+      "name" : "soa24-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg65-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp76-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg43-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa98-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg28-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg45-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg47-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg02-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 84,
+    "priority" : 86,
+    "inQueueSince" : 1344729256726,
+    "name" : "job@84",
+    "nodes" : [ {
+      "name" : "soa11-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev73-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev67-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa26-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg48-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev58-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev71-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 85,
+    "priority" : 86,
+    "inQueueSince" : 1344625261114,
+    "name" : "job@85",
+    "nodes" : [ {
+      "name" : "dev69-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp21-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp28-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa31-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg92-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev96-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg28-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa45-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg93-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev47-solaris10-x86",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "vmg34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa14-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg32-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp77-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp83-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp38-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg80-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa37-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa50-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 86,
+    "priority" : 60,
+    "inQueueSince" : 1344691327361,
+    "name" : "job@86",
+    "nodes" : [ {
+      "name" : "dsp00-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg27-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev40-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg38-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev03-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev08-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg45-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev21-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa06-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 87,
+    "priority" : 35,
+    "inQueueSince" : 1344733521783,
+    "name" : "job@87",
+    "nodes" : [ {
+      "name" : "soa87-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg62-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg65-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg96-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg82-solaris10-x86_64",
+      "executors" : 5,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp11-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg28-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa65-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa17-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg58-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg65-Win2k8-x86",
+      "executors" : 5,
+      "freeExecutors" : 5
+    }, {
+      "name" : "dsp07-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa81-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp76-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg48-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp11-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 88,
+    "priority" : 88,
+    "inQueueSince" : 1344750236567,
+    "name" : "job@88",
+    "nodes" : [ {
+      "name" : "vmg37-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev69-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev80-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev44-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa37-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev16-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp10-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa45-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg70-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev64-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp51-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg48-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 89,
+    "priority" : 80,
+    "inQueueSince" : 1344614341401,
+    "name" : "job@89",
+    "nodes" : [ {
+      "name" : "soa42-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 90,
+    "priority" : 79,
+    "inQueueSince" : 1344811129496,
+    "name" : "job@90",
+    "nodes" : [ {
+      "name" : "dev96-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp44-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa49-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa31-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev80-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev96-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev08-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa45-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp00-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa38-Win2k8-x86_64",
+      "executors" : 3,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg30-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp98-solaris10-sparc",
+      "executors" : 3,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev05-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg69-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg96-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp76-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 91,
+    "priority" : 10,
+    "inQueueSince" : 1344826886913,
+    "name" : "job@91",
+    "nodes" : [ {
+      "name" : "soa37-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg37-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg02-rhel5-x86",
+      "executors" : 3,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa96-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg27-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp85-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev63-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp67-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 92,
+    "priority" : 71,
+    "inQueueSince" : 1344821147130,
+    "name" : "job@92",
+    "nodes" : [ {
+      "name" : "vmg29-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg74-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg80-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg32-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg28-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp66-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 93,
+    "priority" : 83,
+    "inQueueSince" : 1344649540364,
+    "name" : "job@93",
+    "nodes" : [ {
+      "name" : "vmg25-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 94,
+    "priority" : 39,
+    "inQueueSince" : 1344608651868,
+    "name" : "job@94",
+    "nodes" : [ {
+      "name" : "dev96-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa52-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg11-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg32-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev50-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp89-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev40-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg32-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev71-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg93-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 95,
+    "priority" : 63,
+    "inQueueSince" : 1344699055054,
+    "name" : "job@95",
+    "nodes" : [ {
+      "name" : "vmg64-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa96-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa98-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev67-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 96,
+    "priority" : 9,
+    "inQueueSince" : 1344837604706,
+    "name" : "job@96",
+    "nodes" : [ {
+      "name" : "soa86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 97,
+    "priority" : 67,
+    "inQueueSince" : 1344677084524,
+    "name" : "job@97",
+    "nodes" : [ {
+      "name" : "vmg32-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa65-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 98,
+    "priority" : 40,
+    "inQueueSince" : 1344657380839,
+    "name" : "job@98",
+    "nodes" : [ {
+      "name" : "soa86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg35-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp28-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev40-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev08-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev44-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa50-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 99,
+    "priority" : 0,
+    "inQueueSince" : 1344732972508,
+    "name" : "job@99",
+    "nodes" : [ {
+      "name" : "soa42-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg38-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa69-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa06-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 100,
+    "priority" : 30,
+    "inQueueSince" : 1344649227661,
+    "name" : "job@100",
+    "nodes" : [ {
+      "name" : "dev56-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg82-solaris10-x86_64",
+      "executors" : 5,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa31-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg28-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev18-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg02-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg71-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp98-solaris10-sparc",
+      "executors" : 3,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg51-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa23-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa01-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa83-Win2k8-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "dev06-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg75-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg88-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa11-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp80-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 101,
+    "priority" : 35,
+    "inQueueSince" : 1344777017360,
+    "name" : "job@101",
+    "nodes" : [ {
+      "name" : "vmg66-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp89-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp30-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev73-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa81-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg11-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa22-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp44-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp82-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev47-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa83-Win2k8-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "dsp83-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa91-rhel6-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg58-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 102,
+    "priority" : 61,
+    "inQueueSince" : 1344695748900,
+    "name" : "job@102",
+    "nodes" : [ {
+      "name" : "dsp10-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa87-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg58-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev06-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev63-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp11-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp66-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg47-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 103,
+    "priority" : 41,
+    "inQueueSince" : 1344795049506,
+    "name" : "job@103",
+    "nodes" : [ {
+      "name" : "dev12-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp99-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg43-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp41-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa06-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev71-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev21-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa06-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa65-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp11-rhel5-x86",
+      "executors" : 4,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg11-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev51-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg65-Win2k8-x86",
+      "executors" : 5,
+      "freeExecutors" : 5
+    }, {
+      "name" : "vmg35-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev06-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 104,
+    "priority" : 89,
+    "inQueueSince" : 1344652622311,
+    "name" : "job@104",
+    "nodes" : [ {
+      "name" : "dsp98-solaris10-sparc",
+      "executors" : 3,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 105,
+    "priority" : 4,
+    "inQueueSince" : 1344691363341,
+    "name" : "job@105",
+    "nodes" : [ {
+      "name" : "soa72-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 106,
+    "priority" : 37,
+    "inQueueSince" : 1344692672795,
+    "name" : "job@106",
+    "nodes" : [ {
+      "name" : "dev96-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 107,
+    "priority" : 68,
+    "inQueueSince" : 1344639125103,
+    "name" : "job@107",
+    "nodes" : [ {
+      "name" : "dsp30-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa42-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg62-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev67-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp28-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp11-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev18-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg64-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa17-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp61-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg27-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp44-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa37-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 108,
+    "priority" : 95,
+    "inQueueSince" : 1344828329504,
+    "name" : "job@108",
+    "nodes" : [ {
+      "name" : "dev96-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg29-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa52-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa87-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev56-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev95-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa06-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa45-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp63-solaris10-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg65-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev05-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa81-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa11-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa38-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 109,
+    "priority" : 12,
+    "inQueueSince" : 1344781519822,
+    "name" : "job@109",
+    "nodes" : [ {
+      "name" : "dev12-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev67-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev56-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg74-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa15-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg63-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp67-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa14-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa81-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp77-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp76-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg80-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa38-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 110,
+    "priority" : 69,
+    "inQueueSince" : 1344742486055,
+    "name" : "job@110",
+    "nodes" : [ {
+      "name" : "vmg11-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg41-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp30-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp98-solaris10-sparc",
+      "executors" : 3,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa14-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa06-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev07-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp77-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp29-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev52-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 111,
+    "priority" : 4,
+    "inQueueSince" : 1344751770520,
+    "name" : "job@111",
+    "nodes" : [ {
+      "name" : "soa96-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 112,
+    "priority" : 28,
+    "inQueueSince" : 1344658306260,
+    "name" : "job@112",
+    "nodes" : [ {
+      "name" : "dsp30-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg32-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg51-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa96-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp89-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev56-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg96-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev63-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg35-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp73-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 113,
+    "priority" : 94,
+    "inQueueSince" : 1344827475918,
+    "name" : "job@113",
+    "nodes" : [ {
+      "name" : "dev47-solaris10-x86",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "vmg27-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 114,
+    "priority" : 82,
+    "inQueueSince" : 1344797594674,
+    "name" : "job@114",
+    "nodes" : [ {
+      "name" : "dsp61-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 115,
+    "priority" : 73,
+    "inQueueSince" : 1344625424231,
+    "name" : "job@115",
+    "nodes" : [ {
+      "name" : "soa49-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa49-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp39-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa17-rhel6-x86",
+      "executors" : 4,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg02-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg83-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa22-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg35-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev50-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev06-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa69-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp38-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa37-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa50-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 116,
+    "priority" : 26,
+    "inQueueSince" : 1344721124843,
+    "name" : "job@116",
+    "nodes" : [ {
+      "name" : "dsp00-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg11-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa83-Win2k8-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "soa42-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 117,
+    "priority" : 56,
+    "inQueueSince" : 1344676940468,
+    "name" : "job@117",
+    "nodes" : [ {
+      "name" : "dev63-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev16-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp21-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp99-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev03-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg48-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp11-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 118,
+    "priority" : 0,
+    "inQueueSince" : 1344733286227,
+    "name" : "job@118",
+    "nodes" : [ {
+      "name" : "soa07-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg29-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa87-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp54-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp28-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp58-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev49-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa26-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa98-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev52-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev71-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg47-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg32-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp63-solaris10-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev05-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp54-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp51-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp38-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev67-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 119,
+    "priority" : 42,
+    "inQueueSince" : 1344610765111,
+    "name" : "job@119",
+    "nodes" : [ {
+      "name" : "soa24-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg37-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp30-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev81-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp54-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp58-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp11-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg38-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev44-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa33-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg64-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp82-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp13-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev67-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg58-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa38-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 120,
+    "priority" : 66,
+    "inQueueSince" : 1344678536666,
+    "name" : "job@120",
+    "nodes" : [ {
+      "name" : "vmg86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 121,
+    "priority" : 22,
+    "inQueueSince" : 1344752568407,
+    "name" : "job@121",
+    "nodes" : [ {
+      "name" : "dev96-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev63-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg43-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev44-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev71-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa33-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev16-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg70-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp67-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp76-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev73-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp99-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg88-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg45-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 122,
+    "priority" : 84,
+    "inQueueSince" : 1344828961163,
+    "name" : "job@122",
+    "nodes" : [ {
+      "name" : "soa24-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev63-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa52-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp99-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev08-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg63-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev58-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa50-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 123,
+    "priority" : 95,
+    "inQueueSince" : 1344738422679,
+    "name" : "job@123",
+    "nodes" : [ {
+      "name" : "vmg58-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 124,
+    "priority" : 12,
+    "inQueueSince" : 1344732161357,
+    "name" : "job@124",
+    "nodes" : [ {
+      "name" : "dsp63-solaris10-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 125,
+    "priority" : 84,
+    "inQueueSince" : 1344726706691,
+    "name" : "job@125",
+    "nodes" : [ {
+      "name" : "soa87-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg35-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev56-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev40-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg92-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev08-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp72-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp41-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev52-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev78-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg64-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg64-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa83-Win2k8-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "vmg32-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa02-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa81-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev06-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa69-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 126,
+    "priority" : 44,
+    "inQueueSince" : 1344824973277,
+    "name" : "job@126",
+    "nodes" : [ {
+      "name" : "vmg41-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp03-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp99-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg96-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg92-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev08-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa06-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa33-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa37-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg71-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg65-Win2k8-x86",
+      "executors" : 5,
+      "freeExecutors" : 5
+    }, {
+      "name" : "dev50-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev47-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp77-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa66-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg48-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg63-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp67-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp00-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 127,
+    "priority" : 84,
+    "inQueueSince" : 1344854424646,
+    "name" : "job@127",
+    "nodes" : [ {
+      "name" : "dev96-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp30-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev81-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp99-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp72-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa81-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg02-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev20-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa45-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp63-solaris10-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev64-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg96-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa69-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg53-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa38-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 128,
+    "priority" : 99,
+    "inQueueSince" : 1344762395860,
+    "name" : "job@128",
+    "nodes" : [ {
+      "name" : "dev03-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp67-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa96-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev64-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa14-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg32-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg75-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp29-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg48-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp38-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp00-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 129,
+    "priority" : 24,
+    "inQueueSince" : 1344622505062,
+    "name" : "job@129",
+    "nodes" : [ {
+      "name" : "dev12-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa37-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg11-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa98-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg53-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev08-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 130,
+    "priority" : 71,
+    "inQueueSince" : 1344627593144,
+    "name" : "job@130",
+    "nodes" : [ {
+      "name" : "dsp28-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa26-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp85-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev20-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg64-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg58-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev05-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa84-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa42-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa91-rhel6-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev73-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg58-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 131,
+    "priority" : 86,
+    "inQueueSince" : 1344697186110,
+    "name" : "job@131",
+    "nodes" : [ {
+      "name" : "dev12-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev81-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg25-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg35-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp11-rhel5-x86",
+      "executors" : 4,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg02-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev16-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg64-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp98-solaris10-sparc",
+      "executors" : 3,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg72-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg35-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg80-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp00-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 132,
+    "priority" : 51,
+    "inQueueSince" : 1344855575713,
+    "name" : "job@132",
+    "nodes" : [ {
+      "name" : "dsp00-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg41-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev16-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg65-Win2k8-x86",
+      "executors" : 5,
+      "freeExecutors" : 5
+    }, {
+      "name" : "vmg96-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp13-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg32-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg96-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev71-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa17-rhel6-x86",
+      "executors" : 4,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 133,
+    "priority" : 44,
+    "inQueueSince" : 1344844689533,
+    "name" : "job@133",
+    "nodes" : [ {
+      "name" : "dsp86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev12-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa49-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa13-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev47-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg96-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa65-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 134,
+    "priority" : 7,
+    "inQueueSince" : 1344806891080,
+    "name" : "job@134",
+    "nodes" : [ {
+      "name" : "dsp30-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp21-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp07-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev49-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa26-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev52-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa06-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp67-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa01-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa42-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp77-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg53-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 135,
+    "priority" : 44,
+    "inQueueSince" : 1344689869954,
+    "name" : "job@135",
+    "nodes" : [ {
+      "name" : "dsp89-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg29-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg37-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg27-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa49-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg43-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa98-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev18-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa26-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa23-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp11-rhel5-x86",
+      "executors" : 4,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg93-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp00-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev47-solaris10-x86",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "dev34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev63-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp11-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 136,
+    "priority" : 11,
+    "inQueueSince" : 1344707568880,
+    "name" : "job@136",
+    "nodes" : [ {
+      "name" : "vmg34-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 137,
+    "priority" : 33,
+    "inQueueSince" : 1344780751348,
+    "name" : "job@137",
+    "nodes" : [ {
+      "name" : "dsp89-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 138,
+    "priority" : 64,
+    "inQueueSince" : 1344824734912,
+    "name" : "job@138",
+    "nodes" : [ {
+      "name" : "soa24-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg64-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp28-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev47-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 139,
+    "priority" : 77,
+    "inQueueSince" : 1344802314554,
+    "name" : "job@139",
+    "nodes" : [ {
+      "name" : "vmg66-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp21-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa96-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa15-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg63-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev25-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 140,
+    "priority" : 33,
+    "inQueueSince" : 1344660189570,
+    "name" : "job@140",
+    "nodes" : [ {
+      "name" : "dev64-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev95-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg02-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 141,
+    "priority" : 99,
+    "inQueueSince" : 1344712607183,
+    "name" : "job@141",
+    "nodes" : [ {
+      "name" : "soa83-Win2k8-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 2
+    }, {
+      "name" : "vmg47-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 142,
+    "priority" : 34,
+    "inQueueSince" : 1344646798961,
+    "name" : "job@142",
+    "nodes" : [ {
+      "name" : "vmg41-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 143,
+    "priority" : 39,
+    "inQueueSince" : 1344693216741,
+    "name" : "job@143",
+    "nodes" : [ {
+      "name" : "dev63-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg41-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp85-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev96-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev78-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg02-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa17-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa42-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa66-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa37-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev58-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa11-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 144,
+    "priority" : 46,
+    "inQueueSince" : 1344639481575,
+    "name" : "job@144",
+    "nodes" : [ {
+      "name" : "vmg11-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev03-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev81-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp21-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev49-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev95-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa98-rhel6-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev63-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp61-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp67-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg72-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp82-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev06-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp83-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg35-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev58-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 145,
+    "priority" : 77,
+    "inQueueSince" : 1344700520029,
+    "name" : "job@145",
+    "nodes" : [ {
+      "name" : "vmg37-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg27-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa49-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp99-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp11-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 146,
+    "priority" : 62,
+    "inQueueSince" : 1344719118666,
+    "name" : "job@146",
+    "nodes" : [ {
+      "name" : "vmg58-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev05-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp54-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp44-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp77-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev44-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "soa59-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 147,
+    "priority" : 82,
+    "inQueueSince" : 1344685298925,
+    "name" : "job@147",
+    "nodes" : [ {
+      "name" : "vmg66-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg35-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev75-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev80-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa26-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp66-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa33-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp67-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev05-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev47-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg96-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev63-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg53-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg63-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp80-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp00-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 148,
+    "priority" : 8,
+    "inQueueSince" : 1344682443630,
+    "name" : "job@148",
+    "nodes" : [ {
+      "name" : "vmg35-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg80-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 149,
+    "priority" : 13,
+    "inQueueSince" : 1344630234716,
+    "name" : "job@149",
+    "nodes" : [ {
+      "name" : "dsp66-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev03-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp28-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp07-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev21-solaris10-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dev25-solaris10-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg86-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dev78-Win2k8-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "vmg64-Win2k3-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp63-solaris10-x86_64",
+      "executors" : 2,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp01-Win2k8-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg35-rhel5-x86",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp82-Win2k3-x86",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "soa42-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "dsp83-rhel5-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    }, {
+      "name" : "vmg48-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 0
+    } ],
+    "assigned" : null
+  }, {
+    "id" : 150,
+    "priority" : 88,
+    "inQueueSince" : 1344825838930,
+    "name" : "job@150",
+    "nodes" : [ {
+      "name" : "dev81-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }, {
+      "name" : "dsp80-solaris10-sparc",
+      "executors" : 1,
+      "freeExecutors" : 1
+    } ],
+    "assigned" : null
+  } ]
+}
