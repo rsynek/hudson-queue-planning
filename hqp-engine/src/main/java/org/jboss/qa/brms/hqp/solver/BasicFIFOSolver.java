@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.jboss.qa.brms.hqp.solver;
 
 import java.util.*;
@@ -17,6 +13,11 @@ import org.jboss.qa.brms.hqp.domain.SlaveExecutor;
  */
 public class BasicFIFOSolver {
 
+    /**
+     * Computes job-node assignment as FIFO (each job gets the first usable node).
+     * @param queue input problem - list of jobs with available nodes.
+     * @return number of jobs without assigned node.
+     */
     public static int computeUnassigned(HudsonQueue queue) {
         int count = 0;
 

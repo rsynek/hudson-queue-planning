@@ -1,8 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package org.jboss.qa.brms.hqp.solver;
+package org.jboss.qa.brms.hqp.solver.move;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,11 +7,10 @@ import org.drools.planner.core.move.factory.CachedMoveFactory;
 import org.drools.planner.core.solution.Solution;
 import org.jboss.qa.brms.hqp.domain.HudsonQueue;
 import org.jboss.qa.brms.hqp.domain.Job;
-import org.jboss.qa.brms.hqp.domain.Machine;
 import org.jboss.qa.brms.hqp.domain.SlaveExecutor;
 
 /**
- *
+ * Generates AssignmentChangeMove list (for each job and executor).
  * @author rsynek
  */
 public class AssignmentChangeMoveFactory extends CachedMoveFactory {

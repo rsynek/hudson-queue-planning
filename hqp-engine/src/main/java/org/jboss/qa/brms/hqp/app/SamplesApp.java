@@ -60,7 +60,7 @@ public class SamplesApp extends AbstractApplication {
         
         HudsonQueueSolver solver = new HudsonQueueSolverImpl();
         
-        HudsonQueue queue = io.parseJsonFile(new File(
+        HudsonQueue queue = io.readJson(new File(
                 SamplesApp.class.getResource("/org/jboss/qa/brms/hqp/sample_data_1.json").getFile()));
         solver.start(queue);
         
@@ -70,7 +70,7 @@ public class SamplesApp extends AbstractApplication {
             throw new RuntimeException(ex);
         }
         
-        HudsonQueue newQueue = io.parseJsonFile(new File(
+        HudsonQueue newQueue = io.readJson(new File(
                 SamplesApp.class.getResource("/org/jboss/qa/brms/hqp/sample_data_1_merge.json").getFile()));
         
         solver.update(newQueue);
@@ -90,7 +90,7 @@ public class SamplesApp extends AbstractApplication {
     private void run(String classpath, long timeout) {
         log.info("start of parsing: " + classpath);
         
-        HudsonQueue queue = io.parseJsonFile(new File(SamplesApp.class.getResource(classpath).getFile()));        
+        HudsonQueue queue = io.readJson(new File(SamplesApp.class.getResource(classpath).getFile()));        
         
         log.info("file has been parsed successfully");
         run(queue, timeout);

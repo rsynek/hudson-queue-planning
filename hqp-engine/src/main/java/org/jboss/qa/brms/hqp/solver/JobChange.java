@@ -1,7 +1,6 @@
 package org.jboss.qa.brms.hqp.solver;
 
 import java.util.*;
-import org.drools.common.DefaultFactHandle;
 import org.drools.planner.core.score.director.ScoreDirector;
 import org.drools.planner.core.solver.ProblemFactChange;
 import org.jboss.qa.brms.hqp.domain.HudsonQueue;
@@ -10,7 +9,7 @@ import org.jboss.qa.brms.hqp.domain.Machine;
 import org.jboss.qa.brms.hqp.domain.SlaveExecutor;
 
 /**
- * TODO: Test it completely!!!
+ * Job queue merging.
  * @author rsynek
  */
 public class JobChange implements ProblemFactChange {
@@ -21,6 +20,12 @@ public class JobChange implements ProblemFactChange {
         this.newQueue = newQueue;
     }
 
+    /**
+     * Change of facts - updates the queue inside solver with the actual one.
+     * New jobs are added, Old jobs updated, jobs that are no more present in actual queue are removed from solver.
+     * Similar merging is done with available executors.
+     * @param scoreDirector scoreDirector holding working solution.
+     */
     @Override
     public void doChange(ScoreDirector scoreDirector) {      
         HudsonQueue queue = (HudsonQueue) scoreDirector.getWorkingSolution();
@@ -55,20 +60,19 @@ public class JobChange implements ProblemFactChange {
                 if (actual.getAssigned() != null && !actual.getAssigned().equals(SlaveExecutor.UnassignedSlave())) {
                     if (removed.contains(actual.getAssigned())) {
                         scoreDirector.beforeVariableChanged(actual, "assigned");
-                        actual.setAssigned(null);
+                        actual.setAssigned(SlaveExecutor.UnassignedSlave());
                         scoreDirector.afterVariableChanged(actual, "assigned");
                     }
                 }
 
                 newQueue.getJobQueue().remove(i);
             }
-
         }
 
         // rest of jobs are new ones, must be added
         for (Job newJob : newQueue.getJobQueue()) {
             newJob.computeTimeDiff(new Date());
-            newJob.getNodes().add(new Machine("not-assigned"));
+            newJob.getNodes().add(new Machine(Machine.NOT_ASSIGNED));
             newJob.setAssigned(SlaveExecutor.UnassignedSlave());
             scoreDirector.beforeEntityAdded(newJob);
             queue.getJobQueue().add(newJob);
@@ -93,10 +97,7 @@ public class JobChange implements ProblemFactChange {
     private Set<SlaveExecutor> updateExecutors(ScoreDirector sd, HudsonQueue newQueue, HudsonQueue oldQueue) {
         Set<SlaveExecutor> newSlaves = newQueue.getSlaves();
         Set<SlaveExecutor> oldSlaves = oldQueue.getSlaves();
-        
-        System.out.println("updateExecutors");
-        System.out.println(oldSlaves);
-        
+
         Set<SlaveExecutor> removed = new HashSet<SlaveExecutor>();
         for(SlaveExecutor oldSlave : oldSlaves) {
             if(!newSlaves.contains(oldSlave)) {

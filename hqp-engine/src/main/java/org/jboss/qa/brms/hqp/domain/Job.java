@@ -14,7 +14,7 @@ import org.drools.planner.api.domain.variable.ValueRangeType;
 import org.jboss.qa.brms.hqp.solver.JobComparator;
 
 /**
- *
+ * Planning entity - job of the hudson queue to be assigned to a machine.
  * @author rsynek
  */
 @JsonIgnoreProperties(ignoreUnknown=true)
@@ -36,6 +36,9 @@ public class Job {
     @JsonIgnore
     private long timeDiff;
     
+    /**
+     * Computes the time difference between actual time and time when the job entered the queue.
+     */
     public void computeTimeDiff(Date now) {
         timeDiff = now.getTime() - inQueueSince;
         if(timeDiff <= 0) {
@@ -87,6 +90,10 @@ public class Job {
         this.nodes = nodes;
     }
     
+    /**
+     * Planning variable is set of slave executors - constructed from all available machines.
+     * @return actual assigned node.
+     */
     @PlanningVariable
     @ValueRange(type = ValueRangeType.FROM_SOLUTION_PROPERTY, solutionProperty = "slaves")
     public SlaveExecutor getAssigned() {
@@ -97,6 +104,7 @@ public class Job {
         this.assigned = assignedNode;
     }
     
+    @Override
     public Job clone() {
         Job clone = new Job();
         clone.id = id;
@@ -123,6 +131,7 @@ public class Job {
         return equals(o);
     }
     
+    @Override
     public boolean equals(Object o) {
         if (this == o) {
             return true;
@@ -136,6 +145,7 @@ public class Job {
         } 
     }
 
+    @Override
     public int hashCode() {
         return new HashCodeBuilder()
                 .append(id)
@@ -152,6 +162,7 @@ public class Job {
         return hbuilder.toHashCode();
     }
     
+    @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("name: ").append(name).append("@").append(id).append(", assigned: ").append(assigned).append(", time:")

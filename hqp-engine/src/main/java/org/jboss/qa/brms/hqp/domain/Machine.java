@@ -4,7 +4,7 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 
 /**
- *
+ * Reprezentation of machine. Important thing is its name (label) and number of free executors.
  * @author rsynek
  */   
 public class Machine {

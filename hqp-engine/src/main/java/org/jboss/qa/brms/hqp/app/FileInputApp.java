@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.jboss.qa.brms.hqp.app;
 
 import java.io.File;
@@ -30,7 +26,7 @@ public class FileInputApp extends AbstractApplication {
     }
     
     private void run(String filename, long timeout) {
-        HudsonQueue queue = io.parseJsonFile(new File(filename));
+        HudsonQueue queue = io.readJson(new File(filename));
         run(queue, timeout);
     }
 }

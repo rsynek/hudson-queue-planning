@@ -1,8 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package org.jboss.qa.brms.hqp.solver;
+package org.jboss.qa.brms.hqp.solver.move;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -12,7 +8,7 @@ import org.jboss.qa.brms.hqp.domain.Job;
 import org.jboss.qa.brms.hqp.domain.SlaveExecutor;
 
 /**
- *
+ * Swaps assigned nodes between two different jobs.
  * @author rsynek
  */
 public class AssignmentSwapMove implements Move {

@@ -1,15 +1,11 @@
 package org.jboss.qa.brms.hqp.io.generate;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import org.apache.commons.io.FileUtils;
 import org.jboss.qa.brms.hqp.domain.HudsonQueue;
 import org.jboss.qa.brms.hqp.domain.Job;
 import org.jboss.qa.brms.hqp.domain.Machine;
-import org.jboss.qa.brms.hqp.io.JsonDataIO;
+import org.jboss.qa.brms.hqp.io.JsonFileSerializer;
 
 /**
  * Generation of sample inputs.
@@ -38,12 +34,12 @@ public class InputGenerator {
     
     private Calendar now = Calendar.getInstance();
     
-    private JsonDataIO io;
+    private JsonFileSerializer io;
     
     public InputGenerator() {
     }
     
-    public InputGenerator(JsonDataIO io) {
+    public InputGenerator(JsonFileSerializer io) {
         this.io = io;
     }
 
@@ -61,6 +57,7 @@ public class InputGenerator {
     
     /**
      * Generates machines of real-like names.
+     * @param count count of machines to be generated.
      */
     private void generateMachines(int count) {
         String [] firstLabels =  {"soa", "dev", "vmg", "dsp"};
@@ -92,6 +89,7 @@ public class InputGenerator {
     
     /**
      * Randomly selects some of generated machines as assignable for a job.
+     * @return set of machines that are assignable to job (subset of all generated machines).
      */
     private Set<Machine> getAssignableMachines() {
         Map<Integer, Machine> assignable = new HashMap<Integer, Machine>();
@@ -121,6 +119,7 @@ public class InputGenerator {
     
     /**
      * Generates job's waiting milliseconds.
+     * @return time moment when the job entered the queue in milliseconds
      */
     private long generateTimeDiff() {
         long maxTimeDiffValue = maxTimeDiffHours * 3600 * 1000; //to msec
@@ -130,7 +129,9 @@ public class InputGenerator {
     }
     
     /**
-     * Generates list of jobs. Name of job is simply job@ID
+     * Generates jobs with their assignable machines. Name of job is simply job@ID.
+     * @param count number of jobs to be generated.
+     * @return list of jobs
      */
     private List<Job> generateJobs(int count) {
         List<Job> jobs = new ArrayList<Job>(count);
@@ -171,14 +172,8 @@ public class InputGenerator {
     public void generateAndSave(String fileName, int numJobs, int numComp) {
         HudsonQueue queue = generate(numJobs, numComp);
         if(io == null) {
-            io = new JsonDataIO();
+            io = new JsonFileSerializer();
         }
-        String json = io.getJson(queue);
-        try {
-            FileUtils.writeStringToFile(new File(fileName), json);
-        } catch (IOException ex) {
-            Logger.getLogger(InputGenerator.class.getName()).log(Level.SEVERE, null, ex);
-            throw new RuntimeException(ex);
-        }
+        io.writeJson(queue, new File(fileName));      
     }
 }

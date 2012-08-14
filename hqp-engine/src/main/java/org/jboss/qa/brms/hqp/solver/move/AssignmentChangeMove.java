@@ -1,19 +1,14 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package org.jboss.qa.brms.hqp.solver;
+package org.jboss.qa.brms.hqp.solver.move;
 
 import java.util.Collection;
 import java.util.Collections;
 import org.drools.planner.core.move.Move;
 import org.drools.planner.core.score.director.ScoreDirector;
 import org.jboss.qa.brms.hqp.domain.Job;
-import org.jboss.qa.brms.hqp.domain.Machine;
 import org.jboss.qa.brms.hqp.domain.SlaveExecutor;
 
 /**
- * 
+ * Move that changes assignment of a job to another machine.
  * @author rsynek
  */
 public class AssignmentChangeMove implements Move {

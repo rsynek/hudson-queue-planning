@@ -1,8 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package org.jboss.qa.brms.hqp.solver;
+package org.jboss.qa.brms.hqp.solver.move;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +9,7 @@ import org.jboss.qa.brms.hqp.domain.HudsonQueue;
 import org.jboss.qa.brms.hqp.domain.Job;
 
 /**
- *
+ * Generates AssignmentSwapMove list for each tuple of jobs.
  * @author rsynek
  */
 public class AssignmentSwapMoveFactory extends CachedMoveFactory {

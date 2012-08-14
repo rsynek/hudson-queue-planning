@@ -5,6 +5,9 @@ add benchmark to find out tabu size, starting temperature
 -> it should reveale the percentage of planning entities, which we can 
 dynamically set during solving
 
+-------------------------
+
+-add more input data - to test abilities of solution
 
 ------------------------------------
 each machine will have number of free executors

@@ -25,12 +25,19 @@ public class HudsonQueueSolverImpl implements HudsonQueueSolver {
     
     private ExecutorService exec;
 
+    /**
+     * Constructor - creates the solver.
+     */
     public HudsonQueueSolverImpl() {
         XmlSolverFactory solverFactory = new XmlSolverFactory();
         solverFactory.configure(config);
         solver = solverFactory.buildSolver();
     }
 
+    /**
+     * Starts the solver in separate thread.
+     * @param queue input queue to be solved
+     */
     @Override
     public void start(HudsonQueue queue) {
         queue.initSolution();
@@ -47,6 +54,11 @@ public class HudsonQueueSolverImpl implements HudsonQueueSolver {
         });
     }
 
+    /**
+     * Updates the queue.
+     * In case the solver is not running any more, restarts it.
+     * @param queue actual queue to be merged with previous the solver is working on.
+     */
     @Override
     public void update(HudsonQueue queue) {
         if (solver == null || solver.isTerminateEarly()) {
@@ -60,7 +72,8 @@ public class HudsonQueueSolverImpl implements HudsonQueueSolver {
     }
 
     /**
-     * When solver ended solving, but we want to continue.
+     * Restarts the solver.
+     * This planning never ends, every time update comes, the solver must be restarted.
      */
     private void restartSolver() {
         HudsonQueue last = (HudsonQueue) solver.getBestSolution();
@@ -82,8 +95,9 @@ public class HudsonQueueSolverImpl implements HudsonQueueSolver {
     }
     
     /**
-     * Returns actual best solution.
+     * Gets solution from the solver.
      * Assigned node is never null, in case particular job has not assigned any node, NOT-ASSIGNED node is provided.
+     * @return actual best solution
      */
     @Override
     public HudsonQueue getSolution() {
@@ -95,16 +109,14 @@ public class HudsonQueueSolverImpl implements HudsonQueueSolver {
                 if(j.getAssigned() == null) {
                     j.setAssigned(new SlaveExecutor(Machine.NOT_ASSIGNED));
                 }
-            }
-            
-            if(!solver.isSolving()) {
-                restartSolver();
-            }
-            
+            }      
             return solution;
         }
     }
 
+    /**
+     * Stops the solver immediately.
+     */
     @Override
     public void stop() {
         if (solver != null) {
@@ -116,7 +128,8 @@ public class HudsonQueueSolverImpl implements HudsonQueueSolver {
     }
 
     /**
-     * How many jobs assigned ratio (actual solution vs FIFO)
+     * How many jobs assigned ratio (actual solution vs FIFO).
+     * @return difference between FIFO and this solution; higher is better -> it tells how much more jobs have been assigned
      */
     @Override
     public int getRatio() {

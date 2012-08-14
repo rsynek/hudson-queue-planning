@@ -3,7 +3,7 @@
     <termination>
         <maximumMinutesSpend>10</maximumMinutesSpend>
     </termination>
-    <environmentMode>TRACE</environmentMode>
+    <environmentMode>PRODUCTION</environmentMode>
     <solutionClass>org.jboss.qa.brms.hqp.domain.HudsonQueue</solutionClass>
     <planningEntityClass>org.jboss.qa.brms.hqp.domain.Job</planningEntityClass>
     <scoreDirectorFactory>

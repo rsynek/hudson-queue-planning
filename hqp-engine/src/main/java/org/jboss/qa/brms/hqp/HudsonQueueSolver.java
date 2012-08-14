@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.jboss.qa.brms.hqp;
 
 import org.jboss.qa.brms.hqp.domain.HudsonQueue;
@@ -13,29 +9,33 @@ import org.jboss.qa.brms.hqp.domain.HudsonQueue;
 public interface HudsonQueueSolver {
 
     /**
-     * returns best available solution.
+     * Gets solution from the solver.
+     * Assigned node is never null, in case particular job has not assigned any node, NOT-ASSIGNED node is provided.
+     * @return actual best solution
      */
     HudsonQueue getSolution();
 
     /**
-     * starts the planning.
+     * Starts the solver in separate thread.
+     * @param queue input queue to be solved
      */
     void start(HudsonQueue queue);
 
     /**
-     * stops the planning
+     * Stops the solver immediately.
      */
     void stop();
 
     /**
-     * merges actual and previous queue
-     * @param queue the actual queue
+     * Updates the queue.
+     * In case the solver is not running any more, restarts it.
+     * @param queue actual queue to be merged with previous the solver is working on.
      */
     void update(HudsonQueue queue);
     
     /**
-     * the difference between number of unassigned jobs (old solution - new solution)
-     * -> higher number is better; it tells how much more jobs have been assigned
+     * How many jobs assigned ratio (actual solution vs FIFO).
+     * @return difference between FIFO and this solution; higher is better -> it tells how much more jobs have been assigned
      */
     int getRatio();
 }

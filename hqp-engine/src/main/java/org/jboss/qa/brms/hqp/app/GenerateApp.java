@@ -1,11 +1,10 @@
 package org.jboss.qa.brms.hqp.app;
 
-
 import org.jboss.qa.brms.hqp.io.generate.InputGenerator;
 
 /**
  * Generates new input JSON file.
- * usage: java org.jboss.qa.brms.hqp.app.GenerateApp filename jobCount nodeCount
+ * usage: java org.jboss.qa.brms.hqp.app.GenerateApp filename jobCount nodeCount percentage
  * 
  */
 public class GenerateApp extends AbstractApplication {  
@@ -15,27 +14,25 @@ public class GenerateApp extends AbstractApplication {
             throw new IllegalArgumentException("Filename must be provided.");
         }
         
-        int jobCount;
-        try {
-            jobCount = Integer.parseInt(args[1]);
-        } catch(Exception ex) {
-            throw new IllegalArgumentException("Number of jobs must be provided.", ex);
-        }
-        
-        int nodeCount;
-        try {
-            nodeCount = Integer.parseInt(args[2]);
-        } catch(Exception ex) {
-            throw new IllegalArgumentException("Number of nodes must be provided.", ex);
-        }
-        
-        new GenerateApp().runGenerated(args[0], jobCount, nodeCount);
+        int jobCount = parseInt(args[1], "Number of jobs must be provided.");
+        int nodeCount = parseInt(args[2], "Number of nodes must be provided.");
+        int percentage = parseInt(args[3],"Percentage of available nodes for each job must be provided.");
+             
+        new GenerateApp().runGenerated(args[0], jobCount, nodeCount, percentage);
     }
        
-    private void runGenerated(String filename, int jobs, int machines) {
+    private static int parseInt(String number, String msg) {
+        try {
+             return Integer.parseInt(number);
+        } catch(Exception ex) {
+            throw new IllegalArgumentException(msg, ex);
+        }
+    }
+    
+    private void runGenerated(String filename, int jobs, int machines, int percentage) {
         InputGenerator generator = new InputGenerator(io);
         
-        generator.setMaxMachinesPerJobPercentage(30);
+        generator.setMaxMachinesPerJobPercentage(percentage);
         generator.setMaxTimeDiffHours(72);
         
         generator.generateAndSave(filename, jobs, machines);

@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.jboss.qa.brms.hqp.domain;
 
 import java.util.*;
@@ -27,6 +23,9 @@ public class HudsonQueue implements Solution<HardAndSoftScore> {
     @JsonIgnore
     private Set<SlaveExecutor> slaves;
     
+    /**
+     * These are the planning entities. @PlanningEntityCollectionProperty annotation is on getter.
+     */
     @JsonProperty("queue")
     @JsonUnwrapped(enabled=true)    
     private List<Job> jobQueue;
@@ -37,26 +36,19 @@ public class HudsonQueue implements Solution<HardAndSoftScore> {
         jobQueue = jobs;
     }   
     
+    /**
+     * Initialization of this queue instance. Does some preprocessing - computes waiting time and adds NOT-ASSIGNED node to
+     * each job in queue.
+     */
     public void initSolution() {
-        Set<Machine> machines = new HashSet<Machine>();
-        slaves = new HashSet<SlaveExecutor>();
         Date now = new Date();
         Machine notAssignedMachine = new Machine(Machine.NOT_ASSIGNED);
         for(Job job : jobQueue) {
-            machines.addAll(job.getNodes());
-
             job.getNodes().add(notAssignedMachine);
             job.setAssigned(null);
             job.computeTimeDiff(now);          
-        }
-        
-        for(Machine m : machines) {
-            for(int i = 0; i < m.getFreeExecutors(); i++) {
-                slaves.add(new SlaveExecutor(m, i));
-            }
-        }
-
-        slaves.add(new SlaveExecutor(notAssignedMachine));
+        }       
+        getSlaves();
     }
     
     public Set<SlaveExecutor> getSlaves() {
@@ -70,13 +62,18 @@ public class HudsonQueue implements Solution<HardAndSoftScore> {
         this.slaves = slaveList;
     }
     
+    /**
+     * In this case problem facts are available executors that can be assigned to jobs.
+     * @return Collection of facts
+     */
     @JsonIgnore
     public Collection getProblemFacts() {
         Collection facts = new ArrayList<Object>();
-        facts.addAll(this.slaves);
+        facts.addAll(getSlaves());
         return facts;
     } 
   
+    @Override
     public Solution cloneSolution() {
         HudsonQueue clone = new HudsonQueue();
         clone.score = score;
@@ -87,7 +84,7 @@ public class HudsonQueue implements Solution<HardAndSoftScore> {
         clone.jobQueue = clonedJobs;
         
         Set<SlaveExecutor> clonedSlaves = new HashSet<SlaveExecutor>();
-        for(SlaveExecutor slave : slaves) {
+        for(SlaveExecutor slave : getSlaves()) {
             clonedSlaves.add(slave.clone());
         }
         clone.slaves = clonedSlaves;
@@ -95,10 +92,12 @@ public class HudsonQueue implements Solution<HardAndSoftScore> {
         return clone;
     }
 
+    @Override
     public HardAndSoftScore getScore() {
         return this.score;
     }
 
+    @Override
     public void setScore(HardAndSoftScore score) {
         this.score = score;
     }
@@ -143,8 +142,10 @@ public class HudsonQueue implements Solution<HardAndSoftScore> {
         return hashCodeBuilder.toHashCode();
     }
     
-    /**  useful methods for displaying info about result   **/
-    
+    /**
+     * Constructs set of all possible machines from known jobs.
+     * @return Set of machines  (It does not matter whether the machine has free executors of not).
+     */  
     @JsonIgnore
     public Set<Machine> getAllNodes() {
         Set<Machine> nodes = new HashSet<Machine>();
@@ -154,6 +155,11 @@ public class HudsonQueue implements Solution<HardAndSoftScore> {
         return nodes;
     }
     
+    /**
+     * Constructs set of all executors. First, set of possible machines is contructed {@link #getAllNodes() getAllNodes}. After
+     * that set of executors is created based upon a free executors count from each machine.
+     * @return Set of executors.
+     */
     @JsonIgnore
     private Set<SlaveExecutor> getAllExecutors() {
         Set<Machine> machines = getAllNodes();
@@ -163,20 +169,11 @@ public class HudsonQueue implements Solution<HardAndSoftScore> {
                 slaveExecs.add(new SlaveExecutor(m, i));
             }
         }
+        slaveExecs.add(SlaveExecutor.UnassignedSlave());
         return slaveExecs;
     }
     
-    @JsonIgnore
-    public List<Job> getUnassigned() {
-        List<Job> jobs = new ArrayList<Job>();
-        for(Job j : jobQueue) {
-            if(j.getAssigned() != null && j.getAssigned().getMachine().getName().equals("not-assigned")) {
-                jobs.add(j);
-            }
-        }
-        return jobs;
-    }
-    
+    @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         

@@ -4,7 +4,8 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 
 /**
- *
+ * Hudson Executor. Typically, each machine has only one executors, but there are machines with more...
+ * Each executor is identified by machine it belongs to and ID (simply assigned from number of free executors).
  * @author rsynek
  */
 public class SlaveExecutor {
@@ -28,6 +29,10 @@ public class SlaveExecutor {
         this.id = id;
     }
     
+    /**
+     * @return special executor which represents state when job has no assigned machine. Null cannot be used because planner 
+     * tries to assign facts to entities till their planning variables are null.
+     */
     public static SlaveExecutor UnassignedSlave() {
         return new SlaveExecutor(Machine.NOT_ASSIGNED);
     }
@@ -48,6 +53,7 @@ public class SlaveExecutor {
         this.machine = machine;
     }
 
+    @Override
     public SlaveExecutor clone() {
         return new SlaveExecutor(machine, id);
     }
@@ -75,6 +81,7 @@ public class SlaveExecutor {
                 .toHashCode();
     }
     
+    @Override
     public String toString() {
         if(machine == null) {
             return "null@" + id;

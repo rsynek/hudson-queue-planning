@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.jboss.qa.brms.hqp.rest.json;
 
 import java.io.IOException;
@@ -18,6 +14,9 @@ public class HudsonQueueJsonHelper {
 
     private ObjectMapper mapper;
 
+    /**
+     * constructor - jackson initialization, registration of a custom serializer.
+     */
     public HudsonQueueJsonHelper() {
         mapper = new ObjectMapper();
         SimpleModule simpleModule = new SimpleModule("SimpleModule", new Version(1, 9, 8, null));
@@ -25,6 +24,11 @@ public class HudsonQueueJsonHelper {
         mapper.registerModule(simpleModule);
     }
 
+    /**
+     * creates json string from HudsonQueue instance.
+     * @param hq HudsonQueue instance (jobs have assigned machines)
+     * @return json string - simple job:node format
+     */
     public String getJson(HudsonQueue hq) {
         try {
             return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(hq);

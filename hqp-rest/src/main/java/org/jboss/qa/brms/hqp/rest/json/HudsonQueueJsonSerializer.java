@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.jboss.qa.brms.hqp.rest.json;
 
 import java.io.IOException;
@@ -14,6 +10,8 @@ import org.jboss.qa.brms.hqp.domain.Job;
 
 /**
  * Custom serializer for simpler output.
+ * data format:
+ * {'solution': [{'id':124, 'name':'job@124', 'node':'vmg77-win2k3-x86_64'}]}
  *
  * @author rsynek
  */
