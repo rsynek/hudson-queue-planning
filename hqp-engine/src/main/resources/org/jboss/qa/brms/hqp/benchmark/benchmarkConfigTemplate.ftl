@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plannerBenchmark>
+    <parallelBenchmarkCount>2</parallelBenchmarkCount>
+    <benchmarkDirectory>/home/rsynek/Projects/HudsonQueuePlanning/hqp-engine/benchmark/output</benchmarkDirectory>
+    <warmUpSecondsSpend>30</warmUpSecondsSpend>
+
+    <inheritedSolverBenchmark>
+        <problemBenchmarks>
+            <problemIOClass>org.jboss.qa.brms.hqp.io.JsonProblemIO</problemIOClass>
+            <inputSolutionFile>benchmark/data/15_25_40.json</inputSolutionFile>
+            <inputSolutionFile>benchmark/data/15_25_20.json</inputSolutionFile>
+            <inputSolutionFile>benchmark/data/150_200_30.json</inputSolutionFile>
+            <inputSolutionFile>benchmark/data/150_200_10.json</inputSolutionFile>
+            <problemStatisticType>BEST_SOLUTION_CHANGED</problemStatisticType>
+        </problemBenchmarks>
+        <solver>
+            <termination>
+                <maximumMinutesSpend>2</maximumMinutesSpend>
+            </termination>           
+            <environmentMode>PRODUCTION</environmentMode>
+            <solutionClass>org.jboss.qa.brms.hqp.domain.HudsonQueue</solutionClass>
+            <planningEntityClass>org.jboss.qa.brms.hqp.domain.Job</planningEntityClass>
+            <scoreDirectorFactory>
+                <scoreDefinitionType>HARD_AND_SOFT</scoreDefinitionType>
+                <scoreDrl>/org/jboss/qa/brms/hqp/hudsonQueuePlanningRules.drl</scoreDrl>
+            </scoreDirectorFactory>
+            <constructionHeuristic>
+                <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+                <constructionHeuristicPickEarlyType>NEVER</constructionHeuristicPickEarlyType>
+            </constructionHeuristic>             
+        </solver>
+    </inheritedSolverBenchmark>
+
+<#list params as item>
+    <solverBenchmark>
+        <name>Benchmark_${item[0]}hard_${item[1]}soft_${item[2]}tabu</name>
+        <solver>                
+            <localSearch>
+                <unionMoveSelector>
+                    <changeMoveSelector/>
+                    <swapMoveSelector/>
+                    <pillarSwapMoveSelector/>
+                </unionMoveSelector>
+                <acceptor>
+                    <planningEntityTabuSize>${item[2]}</planningEntityTabuSize>
+                    <simulatedAnnealingStartingTemperature>${item[0]}hard/${item[1]}soft</simulatedAnnealingStartingTemperature>
+                </acceptor>
+                <forager>
+                    <pickEarlyType>FIRST_BEST_SCORE_IMPROVING</pickEarlyType>
+                    <minimalAcceptedSelection>8</minimalAcceptedSelection>
+                </forager>
+            </localSearch>           
+        </solver>
+    </solverBenchmark>   
+</#list>
+</plannerBenchmark>

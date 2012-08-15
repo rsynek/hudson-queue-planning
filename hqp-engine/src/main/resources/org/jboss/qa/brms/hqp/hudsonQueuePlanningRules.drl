@@ -11,7 +11,7 @@ import org.jboss.qa.brms.hqp.domain.Machine;
 import org.jboss.qa.brms.hqp.domain.SlaveExecutor;
 import java.util.Collection;
 
-global HardAndSoftScoreHolder scoreHolder;
+global HardAndSoftScoreHolder scoreHolder; 
 
 
 /************ Hard constraints *****************/

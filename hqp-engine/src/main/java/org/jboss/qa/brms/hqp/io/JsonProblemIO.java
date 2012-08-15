@@ -1,7 +1,7 @@
 package org.jboss.qa.brms.hqp.io;
 
 import java.io.File;
-import org.drools.planner.benchmark.api.ProblemIO;
+import org.drools.planner.core.solution.ProblemIO;
 import org.drools.planner.core.solution.Solution;
 import org.jboss.qa.brms.hqp.domain.HudsonQueue;
 

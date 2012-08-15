@@ -17,24 +17,18 @@
     </constructionHeuristic> 
   
     <localSearch>
-        <selector>
-            <selector>
-                <moveFactoryClass>org.drools.planner.core.move.generic.GenericChangeMoveFactory</moveFactoryClass>
-            </selector>
-            <selector>
-                <moveFactoryClass>org.drools.planner.core.move.generic.GenericSwapMoveFactory</moveFactoryClass>
-            </selector>
-            <selector>
-                <moveFactoryClass>org.drools.planner.core.move.generic.GenericSwapPillarMoveFactory</moveFactoryClass>
-            </selector>
-        </selector>
+        <unionMoveSelector>
+            <changeMoveSelector/>
+            <swapMoveSelector/>
+            <pillarSwapMoveSelector/>
+        </unionMoveSelector>        
         <acceptor>
             <planningEntityTabuSize>4</planningEntityTabuSize>
             <simulatedAnnealingStartingTemperature>4hard/100soft</simulatedAnnealingStartingTemperature>
         </acceptor>
         <forager>
             <pickEarlyType>FIRST_BEST_SCORE_IMPROVING</pickEarlyType>
-            <minimalAcceptedSelection>10</minimalAcceptedSelection>
+            <minimalAcceptedSelection>8</minimalAcceptedSelection>
         </forager>
     </localSearch> 
 </solver>
