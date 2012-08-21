@@ -11,7 +11,7 @@
     <modules>
         <module>hqp-rest</module>
         <module>hqp-engine</module>
-        <module>hpq-client</module>
+        <module>hqp-client</module>
     </modules>
      
     <properties>

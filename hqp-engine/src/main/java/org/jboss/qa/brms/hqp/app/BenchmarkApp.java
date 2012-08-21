@@ -29,9 +29,9 @@ public class BenchmarkApp {
     }
     
     private Map getParams() {
-        final int [] hardScore = {2, 4, 8, 16, 32, 64};
+        final int [] hardScore = {2, 4, 8, 16, 32};
         final int [] softScore = {10, 100, 1000};
-        final int [] planningEntityTabuSize = {2, 4, 10, 20, 30};
+        final int [] planningEntityTabuSize = {2, 4, 10, 30};
         
         List<int[]> paramList = new ArrayList<int[]>();
         for(int hard : hardScore) {
