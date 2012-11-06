@@ -23,6 +23,9 @@ public class AppRest {
     }
     
     public void run() {
+        String idStr = RestClientHelper.getClient(URL).info();
+        System.out.println(idStr);
+        
         final String file = "/org/jboss/qa/brms/hqp/sample_data_1.json";
         String json = null;
         try {

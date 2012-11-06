@@ -15,6 +15,11 @@ import javax.ws.rs.core.MediaType;
 @Path("/hudsonQueue")
 public interface HudsonQueueResource {
     
+    @GET
+    @Path("/info")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String info();
+    
     /**
      * Returns the difference between number of unassigned jobs (old solution - new solution).
      * -> higher number is better; it tells how much more jobs have been assigned

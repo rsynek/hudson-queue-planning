@@ -1,6 +1,12 @@
 package org.jboss.qa.brms.hqp.rest;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.*;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import org.jboss.qa.brms.hqp.HudsonQueueSolver;
 import org.jboss.qa.brms.hqp.HudsonQueueSolverImpl;
@@ -18,6 +24,30 @@ public class HudsonQueueResource {
     private static final HudsonQueueSolver hudsonSolver = new HudsonQueueSolverImpl();
     
     private static final HudsonQueueJsonHelper jsonHelper = new HudsonQueueJsonHelper();
+    
+    private static final String ID_PROPERTY = "hqp.identification";
+    
+    /**
+     * Info about the application.
+     */
+    @GET
+    @Path("/info")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String info(@Context HttpServletRequest request) { 
+        String url = request.getRequestURL().toString();
+        String info;
+        Properties props = new Properties();
+        try {
+            props.load(Thread.currentThread().getContextClassLoader().getResourceAsStream("/hqp.properties"));
+            info = props.getProperty(ID_PROPERTY);
+            if(info == null) {
+                info = "No identification found, specify hqp.identification property in WEB-INF/classes/hqp.properties.";
+            }
+        } catch (IOException ex) {
+            info = "Cannot find WEB-INF/classes/hqp.properties.";
+        }
+        return info + " on URL " + url;
+    }
     
     /**
      * Returns the difference between number of unassigned jobs (old solution - new solution).
