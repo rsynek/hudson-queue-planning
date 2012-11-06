@@ -1,9 +1,6 @@
 package org.jboss.qa.brms.hqp.rest;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.Properties;
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
@@ -12,6 +9,8 @@ import org.jboss.qa.brms.hqp.HudsonQueueSolver;
 import org.jboss.qa.brms.hqp.HudsonQueueSolverImpl;
 import org.jboss.qa.brms.hqp.domain.HudsonQueue;
 import org.jboss.qa.brms.hqp.rest.json.HudsonQueueJsonHelper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Planning REST API class.
@@ -20,6 +19,8 @@ import org.jboss.qa.brms.hqp.rest.json.HudsonQueueJsonHelper;
  */
 @Path("/hudsonQueue")
 public class HudsonQueueResource {
+    
+    Logger logger = LoggerFactory.getLogger(HudsonQueueResource.class);
     
     private static final HudsonQueueSolver hudsonSolver = new HudsonQueueSolverImpl();
     
@@ -43,8 +44,9 @@ public class HudsonQueueResource {
             if(info == null) {
                 info = "No identification found, specify hqp.identification property in WEB-INF/classes/hqp.properties.";
             }
-        } catch (IOException ex) {
+        } catch (Exception ex) {
             info = "Cannot find WEB-INF/classes/hqp.properties.";
+            logger.error(info, ex);
         }
         return info + " on URL " + url;
     }
