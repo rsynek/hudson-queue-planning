@@ -28,6 +28,8 @@ public class HudsonQueueResource {
     
     private static final String ID_PROPERTY = "hqp.identification";
     
+    private static Properties props = new Properties();
+    
     /**
      * Info about the application.
      */
@@ -37,9 +39,12 @@ public class HudsonQueueResource {
     public String info(@Context HttpServletRequest request) { 
         String url = request.getRequestURL().toString();
         String info;
-        Properties props = new Properties();
         try {
-            props.load(Thread.currentThread().getContextClassLoader().getResourceAsStream("/hqp.properties"));
+            if(props == null) {
+                java.io.InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream("/hqp.properties");
+                props.load(is);
+                is.close();
+            }
             info = props.getProperty(ID_PROPERTY);
             if(info == null) {
                 info = "No identification found, specify hqp.identification property in WEB-INF/classes/hqp.properties.";
