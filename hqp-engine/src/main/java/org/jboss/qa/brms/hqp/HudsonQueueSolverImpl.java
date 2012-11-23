@@ -6,11 +6,10 @@ import org.drools.planner.config.XmlSolverFactory;
 import org.drools.planner.core.Solver;
 import org.drools.planner.core.score.buildin.hardandsoft.HardAndSoftScore;
 import org.jboss.qa.brms.hqp.domain.HudsonQueue;
-import org.jboss.qa.brms.hqp.domain.Job;
-import org.jboss.qa.brms.hqp.domain.Machine;
-import org.jboss.qa.brms.hqp.domain.SlaveExecutor;
 import org.jboss.qa.brms.hqp.solver.BasicFIFOSolver;
 import org.jboss.qa.brms.hqp.solver.JobChange;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Default implementation of the Hudson Queue Planning API.
@@ -19,17 +18,21 @@ import org.jboss.qa.brms.hqp.solver.JobChange;
  */
 public class HudsonQueueSolverImpl implements HudsonQueueSolver {
 
+    private static Logger logger = LoggerFactory.getLogger(HudsonQueueSolverImpl.class);
+    
     public static final String config = "/org/jboss/qa/brms/hqp/hudsonQueuePlanningSolverConfig.xml";
     
     private Solver solver;
     
     private ExecutorService exec;
+    
+    private XmlSolverFactory solverFactory;
 
     /**
      * Constructor - creates the solver.
      */
     public HudsonQueueSolverImpl() {
-        XmlSolverFactory solverFactory = new XmlSolverFactory();
+        solverFactory = new XmlSolverFactory();
         solverFactory.configure(config);
         solver = solverFactory.buildSolver();
     }
@@ -63,12 +66,16 @@ public class HudsonQueueSolverImpl implements HudsonQueueSolver {
     public void update(HudsonQueue queue) {
         if (solver == null || solver.isTerminateEarly()) {
             throw new IllegalStateException("Solver is not initialized, use 'start' before update");
-        } else {
+        } else {/* enable it after https://issues.jboss.org/browse/JBRULES-3692 is fixed
             if(!solver.isSolving()) {
                 restartSolver();
-            }
+            } 
+            solver.addProblemFactChange(new JobChange(queue));
+            */
+            restartSolver();
             solver.addProblemFactChange(new JobChange(queue));
         }
+        
     }
 
     /**
@@ -78,12 +85,14 @@ public class HudsonQueueSolverImpl implements HudsonQueueSolver {
     private void restartSolver() {
         HudsonQueue last = (HudsonQueue) solver.getBestSolution();
         exec.shutdown();
-        
+
+        logger.info("....restarting solver during update....");
         //here is the place to dynamically change the solver configuration
         //...
         
+        solver = solverFactory.buildSolver();
         solver.setPlanningProblem(last);       
-        
+
         exec = Executors.newSingleThreadExecutor();
         exec.execute(new Runnable() {
 
@@ -104,13 +113,7 @@ public class HudsonQueueSolverImpl implements HudsonQueueSolver {
         if (solver == null || solver.isTerminateEarly()) {
             throw new IllegalStateException("Solver is not initialized, use 'start' before getting solution");
         } else {           
-            HudsonQueue solution = (HudsonQueue) solver.getBestSolution().cloneSolution();
-            for(Job j : solution.getJobQueue()) {
-                if(j.getAssigned() == null) {
-                    j.setAssigned(new SlaveExecutor(Machine.NOT_ASSIGNED));
-                }
-            }      
-            return solution;
+            return (HudsonQueue) solver.getBestSolution().cloneSolution();
         }
     }
 
