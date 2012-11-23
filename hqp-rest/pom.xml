@@ -16,7 +16,7 @@
     <name>Hudson Queue Planning REST</name>
 
     <properties>
-        <jboss.version>7.1.1.Final</jboss.version>
+        <jboss.version>7.1.2.Final</jboss.version>
     </properties>
 
     <dependencies>

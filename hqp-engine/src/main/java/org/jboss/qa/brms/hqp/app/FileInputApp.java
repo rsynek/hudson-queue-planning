@@ -22,11 +22,23 @@ public class FileInputApp extends AbstractApplication {
             throw new IllegalArgumentException("Timeout [msec] must be provided.", ex);
         }
         
-        new FileInputApp().run(args[0], timeout);
+        if(args.length == 3 && args[2].equalsIgnoreCase("-c")) {
+            new FileInputApp().runContinually(args[0], timeout);
+        } else {
+            new FileInputApp().run(args[0], timeout);
+        }    
+    }
+    
+    private HudsonQueue getFromJsonFile(String file) {
+        return io.readJson(new File(file));
+    }
+    
+    private void runContinually(String filename, long waiting) {
+        runContinually(getFromJsonFile(filename), waiting);
     }
     
     private void run(String filename, long timeout) {
-        HudsonQueue queue = io.readJson(new File(filename));
+        HudsonQueue queue = getFromJsonFile(filename);
         run(queue, timeout);
     }
 }

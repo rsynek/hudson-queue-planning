@@ -9,8 +9,6 @@ import org.jboss.qa.brms.hqp.domain.HudsonQueue;
 import org.jboss.qa.brms.hqp.domain.Job;
 import org.jboss.qa.brms.hqp.domain.Machine;
 import org.jboss.qa.brms.hqp.io.JsonFileSerializer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  *
@@ -35,6 +33,37 @@ public class AbstractApplication {
         printSolution(solvedQueue);
         System.out.println("ratio: " + solver.getRatio());
         solver.stop();
+    }
+    
+    protected void runContinually(HudsonQueue queue, long waitingMsecs) {       
+        HudsonQueueSolver solver = new HudsonQueueSolverImpl();
+        
+        solver.start(queue);
+  
+        HudsonQueue backup = (HudsonQueue) queue.cloneSolution();
+        
+        double counter = 0.0;
+        for(;;) {
+            counter++;
+            waiting(waitingMsecs);
+            HudsonQueue solution = solver.getSolution();
+
+            HudsonQueue updatedQueue = (HudsonQueue) backup.cloneSolution();
+            solver.update(updatedQueue);
+            
+            if(counter % 200 == 0) {
+                System.out.println("time [s]: " + counter * ((double)waitingMsecs / 1000));
+            //    System.out.println(solution);
+            }
+        }
+    }
+    
+    private void waiting(long msecs) {
+        try {
+            Thread.sleep(msecs);
+        } catch (InterruptedException ex) {
+             throw new RuntimeException(ex) ;
+        }
     }
     
     public void printSolution(HudsonQueue solution) {

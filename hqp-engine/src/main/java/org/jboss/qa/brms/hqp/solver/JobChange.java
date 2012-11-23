@@ -13,7 +13,7 @@ import org.jboss.qa.brms.hqp.domain.SlaveExecutor;
  * @author rsynek
  */
 public class JobChange implements ProblemFactChange {
-
+    
     private HudsonQueue newQueue;
 
     public JobChange(HudsonQueue newQueue) {
@@ -27,7 +27,7 @@ public class JobChange implements ProblemFactChange {
      * @param scoreDirector scoreDirector holding working solution.
      */
     @Override
-    public void doChange(ScoreDirector scoreDirector) {      
+    public void doChange(ScoreDirector scoreDirector) {         
         HudsonQueue queue = (HudsonQueue) scoreDirector.getWorkingSolution();
         
         //first, update situation about nodes & executors
@@ -45,7 +45,7 @@ public class JobChange implements ProblemFactChange {
                 scoreDirector.afterEntityRemoved(actual);
             } else { //found => merge it               
                 Job newJob = newQueue.getJobQueue().get(i);
-
+                
                 scoreDirector.beforeVariableChanged(actual, "nodes");
                 actual.setNodes(newJob.getNodes());
                 scoreDirector.afterVariableChanged(actual, "nodes");
@@ -64,7 +64,7 @@ public class JobChange implements ProblemFactChange {
                         scoreDirector.afterVariableChanged(actual, "assigned");
                     }
                 }
-
+                
                 newQueue.getJobQueue().remove(i);
             }
         }
@@ -72,7 +72,7 @@ public class JobChange implements ProblemFactChange {
         // rest of jobs are new ones, must be added
         for (Job newJob : newQueue.getJobQueue()) {
             newJob.computeTimeDiff(new Date());
-            newJob.getNodes().add(new Machine(Machine.NOT_ASSIGNED));
+            newJob.getNodes().add(Machine.NOT_ASSIGNED_MACHINE);
             newJob.setAssigned(SlaveExecutor.UnassignedSlave());
             scoreDirector.beforeEntityAdded(newJob);
             queue.getJobQueue().add(newJob);
@@ -85,7 +85,7 @@ public class JobChange implements ProblemFactChange {
             queue.getSlaves().remove(exec);
             scoreDirector.afterProblemFactRemoved(exec);
         }
-
+        
     }
     
     /**

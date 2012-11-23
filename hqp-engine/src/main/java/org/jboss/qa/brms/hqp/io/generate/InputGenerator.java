@@ -158,7 +158,8 @@ public class InputGenerator {
     public HudsonQueue generate(int numJobs, int numComp) {
         generateMachines(numComp);
         List<Job> jobs = generateJobs(numJobs);
-        HudsonQueue hq = new HudsonQueue(jobs);
+        HudsonQueue hq = new HudsonQueue();
+        hq.setJobQueue(jobs);
         
         return hq;
     }

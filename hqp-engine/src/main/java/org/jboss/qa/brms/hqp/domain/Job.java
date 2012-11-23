@@ -20,7 +20,7 @@ import org.jboss.qa.brms.hqp.solver.JobComparator;
 @JsonIgnoreProperties(ignoreUnknown=true)
 @PlanningEntity(difficultyComparatorClass=JobComparator.class)
 public class Job {
-    
+       
     private long id;
     
     private int priority;
@@ -29,7 +29,7 @@ public class Job {
     
     private String name;    
     
-    private Set<Machine> nodes;
+    private Set<Machine> nodes = new HashSet<Machine>();
     
     private SlaveExecutor assigned;
 
@@ -87,7 +87,8 @@ public class Job {
     }
 
     public void setNodes(Set<Machine> nodes) {
-        this.nodes = nodes;
+        this.nodes.removeAll(this.nodes);
+        this.nodes.addAll(nodes);
     }
     
     /**
@@ -109,24 +110,17 @@ public class Job {
         Job clone = new Job();
         clone.id = id;
         clone.priority = priority;
-        if(assigned != null) {
-            clone.assigned = assigned.clone();
-        }
-        else { 
-            clone.assigned = null;
-        }
+        clone.assigned = assigned;
         
         clone.inQueueSince = inQueueSince;
         clone.timeDiff = timeDiff;
         clone.name = name;
-        Set<Machine> clonedNodes = new HashSet<Machine>();
-        for(Machine node : nodes) {
-            clonedNodes.add(node.clone());
-        }
-        clone.nodes = clonedNodes;
+
+        clone.nodes = new HashSet<Machine>(nodes);
         return clone;
     }
     
+    //maybe would be better to add name & nodes instead of ID
     public boolean solutionEquals(Object o) {
         return equals(o);
     }
@@ -151,17 +145,7 @@ public class Job {
                 .append(id)
                 .toHashCode();
     }
-    
-    public int solutionHashCode() {
-        HashCodeBuilder hbuilder = new HashCodeBuilder();
-        hbuilder.append(name);
-        for(Machine m : nodes) {
-            hbuilder.append(m);
-        }
-        hbuilder.append(assigned);
-        return hbuilder.toHashCode();
-    }
-    
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

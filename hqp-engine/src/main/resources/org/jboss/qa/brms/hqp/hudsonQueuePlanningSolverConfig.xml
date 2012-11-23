@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solver>
     <termination>
-        <maximumMinutesSpend>10</maximumMinutesSpend>
+        <maximumSecondsSpend>10</maximumSecondsSpend>
     </termination>
     <environmentMode>PRODUCTION</environmentMode>
     <solutionClass>org.jboss.qa.brms.hqp.domain.HudsonQueue</solutionClass>

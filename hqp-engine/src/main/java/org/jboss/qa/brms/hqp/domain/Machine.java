@@ -11,6 +11,8 @@ public class Machine {
    
     public static final String NOT_ASSIGNED = "not-assigned";
     
+    public static final Machine NOT_ASSIGNED_MACHINE = new Machine(NOT_ASSIGNED);
+    
     private String name;
     
     private int executors;
@@ -53,18 +55,15 @@ public class Machine {
         this.name = name;
     }
     
-    public Machine clone() {
-        return new Machine(name, executors, freeExecutors);
-    }
-    
     public String toString() {
         return name + ":" + freeExecutors;
     }
 
     @Override
     public boolean equals(Object obj) {
-        if(this == obj)
+        if(this == obj) {
             return true;
+        }
         if(obj instanceof Machine) {
             Machine m = (Machine) obj;
             return new EqualsBuilder()

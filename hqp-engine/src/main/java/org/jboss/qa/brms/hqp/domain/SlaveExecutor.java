@@ -10,20 +10,16 @@ import org.apache.commons.lang.builder.HashCodeBuilder;
  */
 public class SlaveExecutor {
     
-    private int id;
+    private static final SlaveExecutor UNASSIGNED_SLAVE = new SlaveExecutor(Machine.NOT_ASSIGNED_MACHINE);
     
-    private Machine machine;
-
-    public SlaveExecutor() {}
+    private final int id;
+    
+    private final Machine machine;
     
     public SlaveExecutor(Machine m) {
         this(m, 0);
     }
-    
-    public SlaveExecutor(String machineName) {
-        this(new Machine(machineName));
-    }
-    
+
     public SlaveExecutor(Machine m, int id) {
         this.machine = m;
         this.id = id;
@@ -32,30 +28,17 @@ public class SlaveExecutor {
     /**
      * @return special executor which represents state when job has no assigned machine. Null cannot be used because planner 
      * tries to assign facts to entities till their planning variables are null.
-     */
+     */  
     public static SlaveExecutor UnassignedSlave() {
-        return new SlaveExecutor(Machine.NOT_ASSIGNED);
+        return UNASSIGNED_SLAVE;
     }
-    
+      
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public Machine getMachine() {
         return machine;
-    }
-
-    public void setMachine(Machine machine) {
-        this.machine = machine;
-    }
-
-    @Override
-    public SlaveExecutor clone() {
-        return new SlaveExecutor(machine, id);
     }
 
     @Override

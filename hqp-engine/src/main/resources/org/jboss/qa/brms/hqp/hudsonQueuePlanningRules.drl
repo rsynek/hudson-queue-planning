@@ -18,7 +18,7 @@ global HardAndSoftScoreHolder scoreHolder;
 
 rule "label"
     when
-        Job(assigned != null, assigned != new SlaveExecutor("not-assigned"), $nodes : nodes, $assigned : assigned)
+        Job(assigned != null, assigned != SlaveExecutor.UnassignedSlave(), $nodes : nodes, $assigned : assigned)
         eval(!$nodes.contains($assigned.getMachine()))
     then
         insertLogical(new IntConstraintOccurrence("label", ConstraintType.NEGATIVE_HARD, 1000));
@@ -29,7 +29,7 @@ end
  */
 rule "oneJobPerMachine"
     when
-        $job : Job($assignedNode : assigned, assigned != null, assigned != new SlaveExecutor("not-assigned"))
+        $job : Job($assignedNode : assigned, assigned != null, assigned != SlaveExecutor.UnassignedSlave())
         $count : Number() from accumulate($jobsWithSameNode : Job(this != $job, assigned == $assignedNode),
                count($jobsWithSameNode)
         )
@@ -39,7 +39,7 @@ end
 
 rule "unassignedJob"
     when
-        $count : Number() from accumulate($jobsWithoutNode : Job(assigned == new SlaveExecutor("not-assigned")),
+        $count : Number() from accumulate($jobsWithoutNode : Job(assigned == SlaveExecutor.UnassignedSlave()),
                count($jobsWithoutNode)
         )
     then
@@ -50,7 +50,7 @@ end
 
 rule "priority"
     when
-        Job(assigned == new SlaveExecutor("not-assigned"), $priority : priority)
+        Job(assigned == SlaveExecutor.UnassignedSlave(), $priority : priority)
     then
         insertLogical(new IntConstraintOccurrence("priority", ConstraintType.NEGATIVE_SOFT, $priority));
 end
@@ -62,8 +62,8 @@ end
 
 rule "concreteJobFirst"
     when
-        $jobA : Job($nodesA : nodes, $assigned : assigned, assigned != null, assigned != new SlaveExecutor("not-assigned"))
-        Job(this != $jobA, $nodesB : nodes, assigned == new SlaveExecutor("not-assigned"), $nodesB.contains($assigned.getMachine()))
+        $jobA : Job($nodesA : nodes, $assigned : assigned, assigned != null, assigned != SlaveExecutor.UnassignedSlave())
+        Job(this != $jobA, $nodesB : nodes, assigned == SlaveExecutor.UnassignedSlave(), $nodesB.contains($assigned.getMachine()))
         eval($nodesB.size() < $nodesA.size())
     then
         insertLogical(new IntConstraintOccurrence("concreteJobFirst", ConstraintType.NEGATIVE_SOFT,
@@ -75,7 +75,7 @@ end
  */
 rule "anti-aging"
     when
-        $job : Job(assigned == new SlaveExecutor("not-assigned"), $time : timeDiff)
+        $job : Job(assigned == SlaveExecutor.UnassignedSlave(), $time : timeDiff)
 
         $sum : Number() from accumulate($younger : Job(this != $job, assigned != null, timeDiff > 1800000,  $time * 2 > timeDiff),
                 count($younger))
@@ -84,7 +84,6 @@ rule "anti-aging"
         insertLogical(new IntConstraintOccurrence("anti-aging", ConstraintType.NEGATIVE_SOFT,
               $sum.intValue()));
 end
-
 
 // Accumulate hard constraints
 rule "hardConstraintsBroken"
