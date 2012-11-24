@@ -23,12 +23,12 @@
             <dependency>
                 <groupId>org.drools.planner</groupId>
                 <artifactId>drools-planner-core</artifactId>
-                <version>5.5.0.Final</version>                  
+                <version>5.5.0-SNAPSHOT</version>                  
             </dependency>
             <dependency>
                 <groupId>org.drools.planner</groupId>
                 <artifactId>drools-planner-benchmark</artifactId>
-                <version>5.5.0.Final</version>                  
+                <version>5.5.0-SNAPSHOT</version>                  
             </dependency>
             <dependency>
                 <groupId>org.freemarker</groupId>

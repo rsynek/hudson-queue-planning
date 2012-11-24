@@ -66,18 +66,15 @@ public class HudsonQueueSolverImpl implements HudsonQueueSolver {
     public void update(HudsonQueue queue) {
         if (solver == null || solver.isTerminateEarly()) {
             throw new IllegalStateException("Solver is not initialized, use 'start' before update");
-        } else {/* enable it after https://issues.jboss.org/browse/JBRULES-3692 is fixed
+        } else {/* enable it after https://issues.jboss.org/browse/JBRULES-3692 is fixed */
             if(!solver.isSolving()) {
                 restartSolver();
             } 
             solver.addProblemFactChange(new JobChange(queue));
-            */
-            restartSolver();
-            solver.addProblemFactChange(new JobChange(queue));
         }
         
     }
-
+ 
     /**
      * Restarts the solver.
      * This planning never ends, every time update comes, the solver must be restarted.
@@ -85,7 +82,7 @@ public class HudsonQueueSolverImpl implements HudsonQueueSolver {
     private void restartSolver() {
         HudsonQueue last = (HudsonQueue) solver.getBestSolution();
         exec.shutdown();
-
+        
         logger.info("....restarting solver during update....");
         //here is the place to dynamically change the solver configuration
         //...
