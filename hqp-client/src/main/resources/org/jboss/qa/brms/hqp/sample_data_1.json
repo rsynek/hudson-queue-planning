@@ -40,7 +40,7 @@
       "executors" : 1,
       "freeExecutors" : 0
     } ],
-    "assigned" : null
+    "assigned" : "soa40-Win2k8-x86_64"
   }, {
     "id" : 3,
     "priority" : 51,

@@ -2,11 +2,13 @@ package org.jboss.qa.brms.hqp.domain;
 
 import java.util.Date;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.codehaus.jackson.annotate.JsonIgnore;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+import org.codehaus.jackson.annotate.JsonSetter;
 import org.drools.planner.api.domain.entity.PlanningEntity;
 import org.drools.planner.api.domain.variable.PlanningVariable;
 import org.drools.planner.api.domain.variable.ValueRange;
@@ -101,6 +103,19 @@ public class Job {
         return this.assigned;
     }
 
+    @JsonSetter
+    public void setAssigned(String machine) {
+        Iterator<Machine> machineIt = getNodes().iterator();
+        while(machineIt.hasNext()) {
+            Machine m = machineIt.next();
+            if(m.getName().equals(machine)) {
+                this.assigned = new SlaveExecutor(m);
+                return;
+            }
+        }
+        this.assigned = SlaveExecutor.UnassignedSlave();
+    }
+    
     public void setAssigned(SlaveExecutor assignedNode) {
         this.assigned = assignedNode;
     }
