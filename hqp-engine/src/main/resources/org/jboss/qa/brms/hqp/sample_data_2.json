@@ -2,7 +2,7 @@
   "queue" : [ {
     "id" : 3,
     "priority" : 10,
-    "inQueueSince" : 1,
+    "inQueueSince" : 20,
     "name" : "job",
     "nodes" : [ {
       "name" : "vmg58-rhel6-x86_64",
@@ -11,9 +11,9 @@
     }],
     "assigned" : null
   }, {
-    "id" : 2,
+    "id" : 5,
     "priority" : 1,
-    "inQueueSince" : 1,
+    "inQueueSince" : 30,
     "name" : "job",
     "nodes" : [ {
       "name" : "vmg58-rhel6-x86_64",

@@ -49,10 +49,11 @@ end
 /*
  * when single job has been started several times, the order should be kept.
  */
-rule "lesserIdFirst"
+rule "olderSameJobFirst"
   when
     $job : Job(assigned != SlaveExecutor.UnassignedSlave())
-    Job(name == $job.name, assigned == SlaveExecutor.UnassignedSlave(), inQueueSince < $job.inQueueSince)
+    Job(name == $job.name, assigned == SlaveExecutor.UnassignedSlave() &&
+        (inQueueSince < $job.inQueueSince || (inQueueSince == $job.inQueueSince && id < $job.id)))
   then
     insertLogical(new IntConstraintOccurrence("firstStartedSameJobGoesFirst", ConstraintType.NEGATIVE_HARD, 10));   
 end
