@@ -46,6 +46,17 @@ rule "unassignedJob"
         insertLogical(new IntConstraintOccurrence("unassignedJob", ConstraintType.NEGATIVE_HARD, $count.intValue()));
 end
 
+/*
+ * when single job has been started several times, the order should be kept.
+ */
+rule "lesserIdFirst"
+  when
+    $job : Job(assigned != SlaveExecutor.UnassignedSlave())
+    Job(name == $job.name, assigned == SlaveExecutor.UnassignedSlave(), id < $job.id)
+  then
+    insertLogical(new IntConstraintOccurrence("firstStartedSameJobGoesFirst", ConstraintType.NEGATIVE_HARD, 10));   
+end
+
 /************ Soft constraints *****************/
 
 rule "priority"

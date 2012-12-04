@@ -22,7 +22,7 @@ public class AppRest {
         String idStr = RestClientHelper.getClient(URL).info();
         System.out.println(idStr);
         
-        final String file = "/org/jboss/qa/brms/hqp/sample_data_1.json";
+        final String file = "/org/jboss/qa/brms/hqp/sample_data_2.json";
         String json = null;
         try {
             json = FileUtils.readFileToString(new File(AppRest.class.getResource(file).getFile()), "UTF-8");

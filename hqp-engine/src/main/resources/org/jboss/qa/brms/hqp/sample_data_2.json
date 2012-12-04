@@ -1,0 +1,25 @@
+{
+  "queue" : [ {
+    "id" : 3,
+    "priority" : 10,
+    "inQueueSince" : 1,
+    "name" : "job",
+    "nodes" : [ {
+      "name" : "vmg58-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }],
+    "assigned" : null
+  }, {
+    "id" : 2,
+    "priority" : 1,
+    "inQueueSince" : 1,
+    "name" : "job",
+    "nodes" : [ {
+      "name" : "vmg58-rhel6-x86_64",
+      "executors" : 1,
+      "freeExecutors" : 1
+    }],
+    "assigned" : null
+  }]
+}
