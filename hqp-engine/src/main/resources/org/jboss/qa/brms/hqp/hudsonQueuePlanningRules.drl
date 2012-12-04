@@ -52,7 +52,7 @@ end
 rule "lesserIdFirst"
   when
     $job : Job(assigned != SlaveExecutor.UnassignedSlave())
-    Job(name == $job.name, assigned == SlaveExecutor.UnassignedSlave(), id < $job.id)
+    Job(name == $job.name, assigned == SlaveExecutor.UnassignedSlave(), inQueueSince < $job.inQueueSince)
   then
     insertLogical(new IntConstraintOccurrence("firstStartedSameJobGoesFirst", ConstraintType.NEGATIVE_HARD, 10));   
 end
