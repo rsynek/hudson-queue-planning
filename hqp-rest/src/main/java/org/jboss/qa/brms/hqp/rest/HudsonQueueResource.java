@@ -1,5 +1,6 @@
 package org.jboss.qa.brms.hqp.rest;
 
+import java.io.IOException;
 import java.util.Properties;
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.*;
@@ -36,8 +37,7 @@ public class HudsonQueueResource {
     @GET
     @Path("/info")
     @Produces(MediaType.TEXT_PLAIN)
-    public String info(@Context HttpServletRequest request) {
-        String url = request.getRequestURL().toString();
+    public String info() {
         String info;
         try {
             java.io.InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream("/hqp.properties");
@@ -45,14 +45,16 @@ public class HudsonQueueResource {
             info = props.getProperty(ID_PROPERTY);
             is.close();
 
-            if (info == null) {
-                info = "No identification found, specify hqp.identification property in WEB-INF/classes/hqp.properties.";
-            }
-        } catch (Exception ex) {
+            if (info != null) return "info: " + info;
+
+            info = "No identification found, specify hqp.identification property in WEB-INF/classes/hqp.properties.";
+            logger.error(info);
+        } catch (IOException ex) {
             info = "Cannot find WEB-INF/classes/hqp.properties.";
             logger.error(info, ex);
         }
-        return info + " on URL " + url;
+
+        return info;
     }
 
     /**
